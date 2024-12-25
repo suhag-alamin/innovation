@@ -5,6 +5,9 @@ import logo from "/assets/images/logo.svg";
 import twitter from "/assets/images/twitter_icon.svg";
 import wmremoveTransformed from "/assets/images/wmremove-transformed.svg";
 import youtube from "/assets/images/youtube_icon.svg";
+import eductionGraphic from "/assets/images/education-graphic.svg";
+import investmentGraphic from "/assets/images/investment-graphic.svg";
+import researchGraphic from "/assets/images/research-graphic.svg";
 
 // Logo
 export const Logo = () => <img src={logo} alt={logo} />;
@@ -22,4 +25,16 @@ export const WmremoveTransformed = () => (
 
 export const ApproachGraphic = () => (
   <img src={approachGraphic} alt={approachGraphic} />
+);
+
+export const EducationGraphic = () => (
+  <img src={eductionGraphic} alt={eductionGraphic} />
+);
+
+export const InvestmentGraphic = () => (
+  <img src={investmentGraphic} alt={investmentGraphic} />
+);
+
+export const ResearchGraphic = () => (
+  <img src={researchGraphic} alt={researchGraphic} />
 );
