@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <header>
         <NavigationBar />
       </header>
-      <main className="main">{children}</main>
+      <main className="main-content">{children}</main>
       <footer>
         <Footer />
       </footer>

@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Logo } from "./Image";
+import { LinkedIn, Logo, Twitter, Youtube } from "./Image";
 
 const Footer = () => {
   return (
-    <div className="footer-bg d-grid gap-4">
+    <div className="footer d-grid gap-4">
       <Container className="py-2 px-0">
         <div className="footer-area">
           <div className="row">
@@ -14,6 +14,7 @@ const Footer = () => {
                   <Logo />
                 </Link>
               </div>
+              <p className="copyright">© 2024 Innovat. All rights reserved.</p>
             </div>
             <div className="col-lg-7">
               <div className="footer-weget">
@@ -21,57 +22,27 @@ const Footer = () => {
                   <div className="footerLinks">
                     <div>
                       <ul>
-                        {" "}
                         <li>
-                          <a
-                            target="_blank"
-                            rel="noreferrer"
-                            href="http://testnet-explorer.coinsec.network/"
-                          >
-                            Explorer
-                          </a>
+                          <Link to="/">About Innovat</Link>
                         </li>
                         <li>
-                          <Link to="/">Our Network</Link>
+                          <Link to="/">Careers</Link>
                         </li>
                         <li>
-                          <Link to="/">Status</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Mining Pool</Link>
+                          <Link to="/">privacy policy</Link>
                         </li>
                       </ul>
                     </div>
                     <div className="middleRow">
                       <ul>
                         <li>
-                          <Link to="/">GitHub</Link>
+                          <Link to="/">Our Funds</Link>
                         </li>
                         <li>
-                          <Link to="/">Documentation</Link>
+                          <Link to="/">education</Link>
                         </li>
                         <li>
-                          <Link to="/">Research</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Ecosystem</Link>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <ul>
-                        {" "}
-                        <li>
-                          <Link to="/terms-conditions">Terms & Conditions</Link>
-                        </li>
-                        <li>
-                          <Link to="/terms">Terms of Use</Link>
-                        </li>
-                        <li>
-                          <Link to="/privacy-policy">Privacy Policy</Link>
-                        </li>
-                        <li>
-                          <Link to="/legal-disclaimer">Legal Disclaimer</Link>
+                          <Link to="/">Research center</Link>
                         </li>
                       </ul>
                     </div>
@@ -88,23 +59,23 @@ const Footer = () => {
             </div>
             <div className="col-lg-2">
               <div className="footer-item connect-icon">
-                <div className="fs-20 text-center">Connect with us </div>
+                <div className="fs-20 fw-700 text-center">Connect with us </div>
                 <ul>
-                  {/* <li>
+                  <li>
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://www.linkedin.com/company/coinsec-network"
+                      href=""
                       className="footerIcon"
                     >
-                      <Linkedin />
+                      <LinkedIn />
                     </a>
-                  </li> */}
-                  {/* <li>
+                  </li>
+                  <li>
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://www.twitter.com/coinsecnetwork"
+                      href=""
                       className="footerIcon"
                     >
                       <Twitter />
@@ -114,20 +85,39 @@ const Footer = () => {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://t.me/coinsec_support"
+                      href=""
                       className="footerIcon"
                     >
-                      <Telegram />
+                      <Youtube />
                     </a>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="fs-16 text-center fw-medium copyright">
-          2024 COINSEC. All rights reserved.
+        <div className="px-2">
+          <p className="fs-14 mb-0 fw-700">Disclaimer</p>
+          <p className="fs-12 ">
+            Disclaimer Any information or advice contained on this website is
+            general in nature and has been prepared without taking into account
+            your objectives, financial situation or needs. Before acting on any
+            information or advice on this website, you should consider the
+            appropriateness of it (and any relevant product) having regard to
+            your circumstances and, if a current offer document is available,
+            read the offer document before acquiring products named on this
+            website. You should also seek independent financial advice prior to
+            acquiring a financial product. All financial products involve risks.
+            Past performance of any product described on this site is not a
+            reliable indication of future performance. Innovat (UK) Limited
+            (registration number 1950706) is licensed as an approved manager
+            under the British Virgin Islands Investment Business (Approved
+            Managers) Regulations 2012. Innovat (UK) Limited ACN 624 214 777
+            holds a Corporate Authorized Representative authorization (CAR No.
+            12932]e2we) from XYZ Wholesale Fund Services Pty Ltd (AFSL No. 528
+            538) allowing it to provide General Product Advice.
+          </p>
         </div>
       </Container>
     </div>
