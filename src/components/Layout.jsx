@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Footer from "./Footer";
 import NavigationBar from "./Navbar";
+import ScrollToTop from "./ScrollToTop";
 
 const Layout = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
       <footer>
         <Footer />
       </footer>
+      <ScrollToTop />
     </div>
   );
 };
