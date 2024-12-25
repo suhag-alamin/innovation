@@ -1,3 +1,4 @@
+import approachGraphic from "/assets/images/approach-graphic.svg";
 import arrowCircle from "/assets/images/arrow_circle_icon.svg";
 import linkedin from "/assets/images/linkedin_icon.svg";
 import logo from "/assets/images/logo.svg";
@@ -17,4 +18,8 @@ export const ArrowCircle = () => <img src={arrowCircle} alt={arrowCircle} />;
 // Images
 export const WmremoveTransformed = () => (
   <img src={wmremoveTransformed} alt={wmremoveTransformed} />
+);
+
+export const ApproachGraphic = () => (
+  <img src={approachGraphic} alt={approachGraphic} />
 );

@@ -54,6 +54,10 @@ body {
 a {
   color: $color0 !important;
 }
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
 
 .container {
   max-width: 1224px !important;
@@ -118,6 +122,15 @@ a {
   font-weight: 900;
 }
 
+.py-42 {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.gap-42 {
+  gap: 42px;
+}
+
 .color0 {
   color: $color0;
 }
@@ -147,6 +160,24 @@ a {
 .main-content {
   min-height: 100vh;
 }
+
+.outline-btn {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  background: transparent;
+  color: #8a95c2;
+  border: 1px solid $color0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+
 // Navbar
 
 .navbar-main {
