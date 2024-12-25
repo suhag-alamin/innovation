@@ -1,3 +1,5 @@
+@import "./index.scss";
+
 .home_hero {
   padding: 33px 0;
   text-align: center;
@@ -21,6 +23,41 @@
       font-size: 20px;
       width: 90%;
       margin-bottom: 20px;
+    }
+  }
+}
+
+.home_newsletter {
+  padding: 60px 0 76px 0;
+  h4 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 130%;
+  }
+  p {
+    font-size: 24px;
+    line-height: 130%;
+  }
+  button {
+    font-size: 20px;
+    font-weight: 700;
+    color: #33363e;
+    background: $color0;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 24px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 50px 0;
+    h4 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
     }
   }
 }
