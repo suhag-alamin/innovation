@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { LinkedIn, Logo, Twitter, Youtube } from "./Image";
+import { LinkedIn, Logo, Twitter, Youtube } from "../Image";
 
 const Footer = () => {
   return (

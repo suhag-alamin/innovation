@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowCircle } from "./Image";
+import { ArrowCircle } from "../Image";
 
 const ScrollToTop = () => {
   const [showButton, setShowButton] = useState(false);

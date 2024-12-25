@@ -1,9 +1,10 @@
-import { Container } from "react-bootstrap";
+import Hero from "../components/ui/home/Hero";
+import "../styles/home.scss";
 
 const Home = () => {
   return (
     <div>
-      <Container className="">hello</Container>p
+      <Hero />
     </div>
   );
 };

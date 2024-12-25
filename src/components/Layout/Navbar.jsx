@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Logo } from "./Image";
+import { Logo } from "../Image";
 
 const NavigationBar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
