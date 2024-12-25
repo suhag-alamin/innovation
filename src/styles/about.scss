@@ -1,0 +1,66 @@
+@import "../styles/index.scss";
+
+.about_hero {
+  background: url(../../public/assets/images/about-hero-bg.svg) no-repeat center
+    center/cover;
+  padding: 100px 0;
+  height: 80vh;
+
+  .about_hero_text {
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(55, 58, 65, 0.65) 100%
+    );
+    opacity: 0.7;
+    padding: 10px 12px 20px 10px;
+    width: 50%;
+    color: #ced7ff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 31.2px */
+  }
+
+  @media screen and (max-width: 768px) {
+    .about_hero_text {
+      width: 90%;
+    }
+  }
+}
+
+.about_sections {
+  padding-top: 50px;
+  padding-bottom: 74px;
+  .section_title {
+    font-size: 36px;
+    font-weight: 700;
+    color: $color0;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background-color: $color0;
+      left: 0;
+      top: 25px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background-color: $color0;
+      right: 0;
+      top: 25px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

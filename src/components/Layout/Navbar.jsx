@@ -51,7 +51,7 @@ const NavigationBar = () => {
 
 const NavLinkComponent = ({ closeOffcanvas }) => (
   <>
-    <Nav.Link href="/" onClick={closeOffcanvas}>
+    <Nav.Link href="/about-innovat" onClick={closeOffcanvas}>
       About Innovat
     </Nav.Link>
 

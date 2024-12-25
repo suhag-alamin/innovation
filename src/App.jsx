@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import TermsConditions from "./pages/TermsConditions";
+import AboutInnovat from "./pages/AboutInnovat";
 
 const App = () => {
   return (
@@ -25,6 +26,14 @@ const App = () => {
                 }
               />
 
+              <Route
+                path="/about-innovat"
+                element={
+                  <Layout>
+                    <AboutInnovat />
+                  </Layout>
+                }
+              />
               <Route
                 path="/terms"
                 element={

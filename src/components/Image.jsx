@@ -1,5 +1,6 @@
 import approachGraphic from "/assets/images/approach-graphic.svg";
 import arrowCircle from "/assets/images/arrow_circle_icon.svg";
+import arrowCircleRight from "/assets/images/arrow_circle_right_icon.svg";
 import linkedin from "/assets/images/linkedin_icon.svg";
 import logo from "/assets/images/logo.svg";
 import twitter from "/assets/images/twitter_icon.svg";
@@ -8,6 +9,9 @@ import youtube from "/assets/images/youtube_icon.svg";
 import eductionGraphic from "/assets/images/education-graphic.svg";
 import investmentGraphic from "/assets/images/investment-graphic.svg";
 import researchGraphic from "/assets/images/research-graphic.svg";
+import memory from "/assets/images/memory_icon.svg";
+import fuel from "/assets/images/fuel_icon.svg";
+import electricCar from "/assets/images/electric_car_icon.svg";
 
 // Logo
 export const Logo = () => <img src={logo} alt={logo} />;
@@ -17,6 +21,12 @@ export const LinkedIn = () => <img src={linkedin} alt={linkedin} />;
 export const Twitter = () => <img src={twitter} alt={twitter} />;
 export const Youtube = () => <img src={youtube} alt={youtube} />;
 export const ArrowCircle = () => <img src={arrowCircle} alt={arrowCircle} />;
+export const ArrowCircleRight = () => (
+  <img src={arrowCircleRight} alt={arrowCircleRight} />
+);
+export const Memory = () => <img src={memory} alt={memory} />;
+export const Fuel = () => <img src={fuel} alt={fuel} />;
+export const ElectricCar = () => <img src={electricCar} alt={electricCar} />;
 
 // Images
 export const WmremoveTransformed = () => (
