@@ -1,10 +1,12 @@
 import { Container } from "react-bootstrap";
+import SectionTitle from "../SectionTitle";
 
 const Mission = () => {
   return (
     <section className="about_sections">
       <Container>
-        <h2 className="section_title">Our Mission</h2>
+        <SectionTitle title="Our Mission" />
+
         <div>
           <p>
             At Innovat, we are committed to helping our clients achieve their

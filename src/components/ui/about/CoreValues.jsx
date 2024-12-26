@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import SectionTitle from "../SectionTitle";
 
 const CoreValues = () => {
   const values = [
@@ -25,15 +26,15 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="py-5">
+    <section className="about_sections">
       <Container>
-        <h2 className="text-center mb-5">Our Core Values</h2>
+        <SectionTitle title="Our Core Values" />
         <Row className="g-4">
           {values.map((value, index) => (
-            <Col key={index} md={6} lg={3}>
+            <Col key={index} xs={12}>
               <div className="text-center">
-                <h3 className="h4 mb-3 text-white">{value.title}</h3>
-                <p className="text-secondary">{value.description}</p>
+                <h3 className="fs-24">{value.title}</h3>
+                <p className="">{value.description}</p>
               </div>
             </Col>
           ))}

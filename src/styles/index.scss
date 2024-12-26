@@ -48,7 +48,7 @@ body {
   line-height: 1.2;
   height: 100%;
   background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a {
@@ -479,5 +479,36 @@ img {
 
   @media (max-width: 768px) {
     margin-top: 20px;
+  }
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+
+  h2 {
+    margin: 0 15px;
+    font-size: 36px;
+    font-weight: 700;
+    color: $color0;
+    text-align: center;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #c2c2ff;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+    }
+
+    .line {
+      flex: 0.5;
+    }
   }
 }

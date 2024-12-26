@@ -39,6 +39,7 @@
     margin-bottom: 40px;
     text-align: center;
     position: relative;
+    z-index: 1;
 
     &::before {
       content: "";
@@ -48,6 +49,7 @@
       background-color: $color0;
       left: 0;
       top: 25px;
+      z-index: -1;
     }
     &::after {
       content: "";
@@ -57,6 +59,7 @@
       background-color: $color0;
       right: 0;
       top: 25px;
+      z-index: -1;
     }
   }
 

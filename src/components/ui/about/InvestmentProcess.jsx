@@ -1,12 +1,13 @@
 import { Container } from "react-bootstrap";
+import SectionTitle from "../SectionTitle";
 
 const InvestmentProcess = () => {
   return (
-    <section className="py-5">
+    <section className="about_sections">
       <Container>
-        <h2 className="text-center mb-5 text-white">Investment Process</h2>
-        <div className="d-flex flex-column gap-5">
-          <p className="text-white">
+        <SectionTitle title="Investment Process" />
+        <div>
+          <p>
             Innovat is a leading global fund manager with a singular investment
             process designed to identify and invest in disruptive innovation
             that has the potential to create long-term value for our clients.
@@ -17,8 +18,8 @@ const InvestmentProcess = () => {
           </p>
 
           <div>
-            <h3 className="mb-3 text-white">Research and Analysis</h3>
-            <p className="text-white">
+            <h5 className="fs-20 fw-700">Research and Analysis</h5>
+            <p>
               We begin our process by researching and analyzing a wide range of
               industries and markets to identify areas of potential disruption.
               We look for companies that are developing innovative solutions to
@@ -30,8 +31,8 @@ const InvestmentProcess = () => {
           </div>
 
           <div>
-            <h3 className="mb-3 text-white">Assessment</h3>
-            <p className="text-white">
+            <h5 className="fs-20 fw-700">Assessment</h5>
+            <p>
               Once we have identified potential investments, we conduct an
               in-depth analysis of each company&apos;s financials, competitive
               landscape, and market opportunity. This includes evaluating the
@@ -43,8 +44,8 @@ const InvestmentProcess = () => {
           </div>
 
           <div>
-            <h3 className="mb-3 text-white">Due Diligence</h3>
-            <p className="text-white">
+            <h5 className="fs-20 fw-700">Due Diligence</h5>
+            <p>
               Once we have identified a potential investment opportunity, we
               conduct due diligence on the company&apos;s operations and
               financials. This includes reviewing the company&apos;s financial
@@ -55,8 +56,8 @@ const InvestmentProcess = () => {
           </div>
 
           <div>
-            <h3 className="mb-3 text-white">Investment Decision</h3>
-            <p className="text-white">
+            <h5 className="fs-20 fw-700">Investment Decision</h5>
+            <p>
               Finally, we make an investment decision based on our analysis of
               the company&apos;s fundamentals as well as our assessment of its
               long-term prospects for success. Our goal is to invest in
