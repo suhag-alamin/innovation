@@ -61,3 +61,125 @@
     }
   }
 }
+
+.investment-slider {
+  position: relative;
+
+  .slider-card-wrapper {
+    height: 320px;
+    overflow-y: auto;
+  }
+
+  .slider-card {
+    height: 100%;
+    border-right: 1px solid rgba(152, 164, 215, 0.25);
+    background: linear-gradient(270deg, #25272b 0%, #373a41 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    padding: 26px 19px;
+
+    .card-header {
+      height: 80%;
+      display: flex;
+      align-items: start;
+      gap: 18px;
+
+      .icon {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+
+    .card-content {
+      font-size: 18px;
+    }
+
+    .find-out-more {
+      color: #98a4d7;
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      text-transform: capitalize;
+      border-radius: 7px;
+      border: 1px solid #98a4d7;
+      background: transparent;
+      padding: 10px 30px;
+    }
+  }
+
+  .custom-nav-button {
+    position: absolute;
+    right: 30px;
+    bottom: -20px;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .icon-box {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .slider-card-wrapper {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .card-header {
+      height: 100%;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .icon {
+      display: none;
+    }
+    .icon-box {
+      display: block;
+      width: 100%;
+      .icon-mobile {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+      }
+    }
+
+    .slider-card {
+      border-right: none;
+      border-bottom: 1px solid rgba(152, 164, 215, 0.25);
+    }
+
+    .custom-nav-button {
+      display: none;
+    }
+
+    .find-out-more {
+      width: 100%;
+    }
+  }
+}
