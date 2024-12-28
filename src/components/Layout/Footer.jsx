@@ -65,7 +65,7 @@ const Footer = () => {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href=""
+                      href="/"
                       className="footerIcon"
                     >
                       <LinkedIn />
@@ -75,7 +75,7 @@ const Footer = () => {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href=""
+                      href="/"
                       className="footerIcon"
                     >
                       <Twitter />
@@ -85,7 +85,7 @@ const Footer = () => {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href=""
+                      href="/"
                       className="footerIcon"
                     >
                       <Youtube />

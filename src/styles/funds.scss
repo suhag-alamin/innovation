@@ -1,0 +1,214 @@
+@import "./index.scss";
+
+.fund-categories {
+  padding: 31px 0 50px 0;
+
+  .category-column {
+    h2 {
+      color: $color0;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 120%;
+      text-transform: uppercase;
+      border-bottom: 1px solid $color0;
+      padding-bottom: 10px;
+      margin-bottom: 27px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 25px;
+
+        h5 {
+          font-size: 20px;
+          font-weight: 400;
+          margin: 0;
+          span {
+            font-weight: 900;
+          }
+        }
+        p {
+          font-size: 9px;
+          color: $color0;
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}
+
+// financial-table
+
+.financial-table-container {
+  .financial-table-header {
+    background: $color0;
+    color: #33363e;
+    padding: 25px 27px;
+    h2 {
+      color: #33363e;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+    }
+  }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 46px;
+    .tab {
+      background: transparent;
+
+      border-right: 1px solid $color0;
+      border-bottom: 1px solid $color0;
+      border-left: 1px solid $color0;
+      border-top: none;
+      display: flex;
+      padding: 11px 61px 10px 61px;
+      justify-content: center;
+      align-items: center;
+      color: $color0;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 24px */
+      text-transform: capitalize;
+
+      &.active {
+        color: #33363e;
+        background: $color0;
+
+        // &:after {
+        //   content: "";
+        //   position: absolute;
+        //   bottom: -1px;
+        //   left: 0;
+        //   right: 0;
+        //   height: 2px;
+        //   background-color: #007bff;
+        // }
+      }
+
+      &:hover {
+        color: #33363e;
+        background: $color0;
+      }
+    }
+  }
+
+  .index-funds {
+    color: $color0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+    text-transform: capitalize;
+    margin: 0;
+    padding-left: 10px;
+    margin-top: 34px;
+  }
+
+  .funds-table {
+    background: transparent;
+    color: $color0;
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+      background-color: transparent !important;
+      th {
+        color: $color0;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 14.4px */
+        text-transform: capitalize;
+        text-align: left;
+
+        &:first-child {
+          font-size: 16px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid rgba(152, 164, 215, 0.2);
+
+        // &:nth-child(odd) {
+        //   background-color: #23272b;
+        // }
+
+        // &:nth-child(even) {
+        //   background-color: #1e2124;
+        // }
+
+        &.category-row {
+          background-color: #2a2e33;
+
+          .category-name {
+            font-weight: 500;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+
+            .expand-icon {
+              width: 18px;
+              height: 18px;
+              transition: transform 0.2s;
+
+              &.expanded {
+                transform: rotate(90deg);
+              }
+            }
+          }
+        }
+
+        td {
+          padding: 0px 10px;
+          border: none;
+          vertical-align: middle;
+          color: $color0;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 120%;
+          text-transform: capitalize;
+
+          &:last-child {
+            text-align: right;
+            padding: 0;
+          }
+
+          // &.fund-name {
+          // }
+
+          .document-icon {
+            width: 18px;
+            height: 18px;
+            color: #a0a0a0;
+            cursor: pointer;
+          }
+
+          .invest-now-btn {
+            border: none;
+            background: $color0;
+            color: #33363e;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 120%;
+            text-transform: capitalize;
+            padding: 16px 26px;
+          }
+        }
+      }
+    }
+  }
+}

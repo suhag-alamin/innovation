@@ -8,6 +8,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import TermsConditions from "./pages/TermsConditions";
 import AboutInnovat from "./pages/AboutInnovat";
+import Funds from "./pages/Funds";
+import ExchangeTraded from "./pages/ExchangeTraded";
 
 const App = () => {
   return (
@@ -31,6 +33,22 @@ const App = () => {
                 element={
                   <Layout>
                     <AboutInnovat />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/funds"
+                element={
+                  <Layout>
+                    <Funds />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/exchange-traded"
+                element={
+                  <Layout>
+                    <ExchangeTraded />
                   </Layout>
                 }
               />

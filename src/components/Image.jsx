@@ -12,6 +12,7 @@ import researchGraphic from "/assets/images/research-graphic.svg";
 import memory from "/assets/images/memory_icon.svg";
 import fuel from "/assets/images/fuel_icon.svg";
 import electricCar from "/assets/images/electric_car_icon.svg";
+import fileText from "/assets/images/file_text_icon.svg";
 
 // Logo
 export const Logo = () => <img src={logo} alt={logo} />;
@@ -27,6 +28,7 @@ export const ArrowCircleRight = () => (
 export const Memory = () => <img src={memory} alt={memory} />;
 export const Fuel = () => <img src={fuel} alt={fuel} />;
 export const ElectricCar = () => <img src={electricCar} alt={electricCar} />;
+export const FileText = () => <img src={fileText} alt={fileText} />;
 
 // Images
 export const WmremoveTransformed = () => (
