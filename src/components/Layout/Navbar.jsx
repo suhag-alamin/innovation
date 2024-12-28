@@ -64,7 +64,7 @@ const NavLinkComponent = ({ closeOffcanvas }) => (
     <Nav.Link href="/education" onClick={closeOffcanvas}>
       Education
     </Nav.Link>
-    <Nav.Link href="/" onClick={closeOffcanvas}>
+    <Nav.Link href="/research" onClick={closeOffcanvas}>
       Research
     </Nav.Link>
     <Nav.Link href="/" onClick={closeOffcanvas}>
