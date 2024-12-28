@@ -55,7 +55,7 @@ const NavLinkComponent = ({ closeOffcanvas }) => (
       About Innovat
     </Nav.Link>
 
-    <Nav.Link href="/" onClick={closeOffcanvas}>
+    <Nav.Link href="/investments" onClick={closeOffcanvas}>
       Investments
     </Nav.Link>
     <Nav.Link href="/funds" onClick={closeOffcanvas}>

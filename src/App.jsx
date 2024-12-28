@@ -10,6 +10,7 @@ import TermsConditions from "./pages/TermsConditions";
 import AboutInnovat from "./pages/AboutInnovat";
 import Funds from "./pages/Funds";
 import ExchangeTraded from "./pages/ExchangeTraded";
+import Investments from "./pages/Investments";
 
 const App = () => {
   return (
@@ -49,6 +50,14 @@ const App = () => {
                 element={
                   <Layout>
                     <ExchangeTraded />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/investments"
+                element={
+                  <Layout>
+                    <Investments />
                   </Layout>
                 }
               />
