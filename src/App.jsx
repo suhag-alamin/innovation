@@ -12,6 +12,7 @@ import Funds from "./pages/Funds";
 import ExchangeTraded from "./pages/ExchangeTraded";
 import Investments from "./pages/Investments";
 import Funding from "./pages/Funding";
+import Education from "./pages/Education";
 
 const App = () => {
   return (
@@ -67,6 +68,14 @@ const App = () => {
                 element={
                   <Layout>
                     <Investments />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/education"
+                element={
+                  <Layout>
+                    <Education />
                   </Layout>
                 }
               />

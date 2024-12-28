@@ -1,0 +1,49 @@
+@import "../styles/index.scss";
+
+.education-section {
+  padding-bottom: 3rem;
+
+  .section-header {
+    background: $color0;
+    color: #33363e;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 24px 0;
+    margin-bottom: 27px;
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .sub-section-header {
+    color: $color0;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    margin-bottom: 34px;
+    border-bottom: 1px solid $color0;
+  }
+  .education-category {
+    margin-bottom: 40px;
+
+    h3 {
+      color: $color0;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 130%;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px dashed $color0;
+    }
+
+    p {
+      color: $color0;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 130%;
+    }
+  }
+}
