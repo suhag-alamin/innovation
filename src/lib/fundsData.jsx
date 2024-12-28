@@ -3,7 +3,7 @@ export const fundsData = [
   {
     id: 1,
     category: "Active Funds",
-    name: "Innovat Clean Energy",
+    name: "Clean Energy",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -16,7 +16,7 @@ export const fundsData = [
   {
     id: 2,
     category: "Active Funds",
-    name: "Innovat Digital Infrastructure",
+    name: "Digital Infrastructure",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -29,7 +29,7 @@ export const fundsData = [
   {
     id: 3,
     category: "Active Funds",
-    name: "Innovat Autonomous Tech",
+    name: "Autonomous Tech",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -42,7 +42,7 @@ export const fundsData = [
   {
     id: 4,
     category: "Active Funds",
-    name: "Innovat Fintech",
+    name: "Fintech",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -55,7 +55,7 @@ export const fundsData = [
   {
     id: 5,
     category: "Active Funds",
-    name: "Innovat Blockchain Technology",
+    name: "Blockchain Technology",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -68,7 +68,7 @@ export const fundsData = [
   {
     id: 6,
     category: "Active Funds",
-    name: "Innovat Space Tech & Exploration",
+    name: "Space Tech & Exploration",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -81,7 +81,7 @@ export const fundsData = [
   {
     id: 7,
     category: "Active Funds",
-    name: "Innovat China Innovation",
+    name: "China Innovation",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -94,7 +94,7 @@ export const fundsData = [
   {
     id: 8,
     category: "Active Funds",
-    name: "Innovat US Innovation",
+    name: "US Innovation",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -107,7 +107,7 @@ export const fundsData = [
   {
     id: 9,
     category: "Active Funds",
-    name: "Innovat Diversified Technology",
+    name: "Diversified Technology",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -120,7 +120,7 @@ export const fundsData = [
   {
     id: 10,
     category: "Active Funds",
-    name: "Innovat Cybersecurity",
+    name: "Cybersecurity",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -133,7 +133,7 @@ export const fundsData = [
   {
     id: 11,
     category: "Active Funds",
-    name: "Innovat Internet Of Things",
+    name: "Internet Of Things",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -146,7 +146,7 @@ export const fundsData = [
   {
     id: 12,
     category: "Active Funds",
-    name: "Innovat Mobility & Transportation",
+    name: "Mobility & Transportation",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -159,7 +159,7 @@ export const fundsData = [
   {
     id: 13,
     category: "Active Funds",
-    name: "Innovat Bitcoin Mining",
+    name: "Bitcoin Mining",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -172,7 +172,7 @@ export const fundsData = [
   {
     id: 14,
     category: "Active Funds",
-    name: "Innovat Digital Health",
+    name: "Digital Health",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -185,7 +185,7 @@ export const fundsData = [
   {
     id: 15,
     category: "Active Funds",
-    name: "Innovat Media & Entertainment",
+    name: "Media & Entertainment",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -198,7 +198,7 @@ export const fundsData = [
   {
     id: 16,
     category: "Active Funds",
-    name: "Innovat Sustainable Agriculture",
+    name: "Sustainable Agriculture",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -211,7 +211,7 @@ export const fundsData = [
   {
     id: 17,
     category: "Active Funds",
-    name: "Innovat Digital Assets",
+    name: "Digital Assets",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -224,7 +224,7 @@ export const fundsData = [
   {
     id: 18,
     category: "Active Funds",
-    name: "Innovat Artificial Intelligence",
+    name: "Artificial Intelligence",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -237,7 +237,7 @@ export const fundsData = [
   {
     id: 19,
     category: "Active Funds",
-    name: "Innovat Robotics & Automation",
+    name: "Robotics & Automation",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -250,7 +250,7 @@ export const fundsData = [
   {
     id: 20,
     category: "Active Funds",
-    name: "Innovat Biotechnology",
+    name: "Biotechnology",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -263,7 +263,7 @@ export const fundsData = [
   {
     id: 21,
     category: "Active Funds",
-    name: "Innovat Smart City",
+    name: "Smart City",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -276,7 +276,7 @@ export const fundsData = [
   {
     id: 22,
     category: "Active Funds",
-    name: "Innovat Environment Sustainability",
+    name: "Environment Sustainability",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -290,7 +290,7 @@ export const fundsData = [
   {
     id: 23,
     category: "Index Funds",
-    name: "Innovat Global Clean Energy",
+    name: "Global Clean Energy",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -303,7 +303,7 @@ export const fundsData = [
   {
     id: 24,
     category: "Index Funds",
-    name: "Innovat Global Digital Infrastructure",
+    name: "Global Digital Infrastructure",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -316,7 +316,7 @@ export const fundsData = [
   {
     id: 25,
     category: "Index Funds",
-    name: "Innovat Global Artificial Intelligence",
+    name: "Global Artificial Intelligence",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -329,7 +329,7 @@ export const fundsData = [
   {
     id: 26,
     category: "Index Funds",
-    name: "Innovat Global Cybersecurity",
+    name: "Global Cybersecurity",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -342,7 +342,7 @@ export const fundsData = [
   {
     id: 27,
     category: "Index Funds",
-    name: "Innovat Global HealthTech",
+    name: "Global HealthTech",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -355,7 +355,7 @@ export const fundsData = [
   {
     id: 28,
     category: "Index Funds",
-    name: "Innovat ESG Innovation Asia Pacific",
+    name: "ESG Innovation Asia Pacific",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -368,7 +368,7 @@ export const fundsData = [
   {
     id: 29,
     category: "Index Funds",
-    name: "Innovat ESG Innovation Europe",
+    name: "ESG Innovation Europe",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -381,7 +381,7 @@ export const fundsData = [
   {
     id: 30,
     category: "Index Funds",
-    name: "Innovat ESG Innovation US",
+    name: "ESG Innovation US",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",

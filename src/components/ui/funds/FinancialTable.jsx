@@ -58,7 +58,10 @@ export default function FinancialTable() {
           <tbody>
             {activeFunds.map((fund) => (
               <tr key={fund.id}>
-                <td className="fund-name">{fund.name}</td>
+                <td className="fund-name">
+                  <span>Innovat™ </span>
+                  {fund.name}
+                </td>
                 <td>{fund.inspectionDate}</td>
                 <td>{fund.nav}</td>
                 <td>{fund.netAssets}</td>
@@ -79,24 +82,13 @@ export default function FinancialTable() {
 
         <h3 className="index-funds">Index Funds</h3>
         <table className="funds-table">
-          {/* <thead>
-            <tr>
-              <th>Index Funds</th>
-              <th>Inception Date</th>
-              <th>NAV</th>
-              <th>Net Assets</th>
-              <th>Yield</th>
-              <th>Units Outstanding</th>
-              <th>Expense Ratio</th>
-              <th>Fund Type</th>
-              <th>Fact Sheet</th>
-              <th>Minimum $250k</th>
-            </tr>
-          </thead> */}
           <tbody>
             {indexFunds.map((fund) => (
               <tr key={fund.id}>
-                <td className="fund-name">{fund.name}</td>
+                <td className="fund-name">
+                  <span>Innovat™ </span>
+                  {fund.name}
+                </td>
                 <td>{fund.inspectionDate}</td>
                 <td>{fund.nav}</td>
                 <td>{fund.netAssets}</td>

@@ -17,7 +17,7 @@ const InvestmentCarousel = () => {
       <Container fluid className="investment-slider">
         <Swiper
           modules={[Navigation]}
-          grabCursor={true}
+          grabCursor={false}
           spaceBetween={24}
           slidesPerView={1.2}
           navigation={{
@@ -37,7 +37,7 @@ const InvestmentCarousel = () => {
             },
           }}
         >
-          {investmentCategories.map((category) => (
+          {investmentCategories.slice(0, 3).map((category) => (
             <SwiperSlide key={category.id} className="slider-card-wrapper">
               <div className="slider-card">
                 <div className="card-header">

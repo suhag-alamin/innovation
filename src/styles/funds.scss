@@ -186,8 +186,11 @@
             padding: 0;
           }
 
-          // &.fund-name {
-          // }
+          &.fund-name {
+            span {
+              font-weight: 900;
+            }
+          }
 
           .document-icon {
             width: 18px;
