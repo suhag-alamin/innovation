@@ -14,6 +14,8 @@ import Investments from "./pages/Investments";
 import Funding from "./pages/Funding";
 import Education from "./pages/Education";
 import Research from "./pages/Research";
+import Superannuation from "./pages/Superannuation";
+import InvestmentFunds from "./pages/InvestmentFunds";
 
 const App = () => {
   return (
@@ -73,6 +75,14 @@ const App = () => {
                 }
               />
               <Route
+                path="/investment-funds"
+                element={
+                  <Layout>
+                    <InvestmentFunds />
+                  </Layout>
+                }
+              />
+              <Route
                 path="/education"
                 element={
                   <Layout>
@@ -85,6 +95,14 @@ const App = () => {
                 element={
                   <Layout>
                     <Research />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/superannuation"
+                element={
+                  <Layout>
+                    <Superannuation />
                   </Layout>
                 }
               />

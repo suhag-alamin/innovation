@@ -50,3 +50,75 @@
     padding-bottom: 6px;
   }
 }
+
+// investment funds
+
+.investment-funds {
+  padding-bottom: 3rem;
+
+  .section-header {
+    background: $color0;
+    color: #33363e;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 24px 0;
+    margin-bottom: 40px;
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .section-subheader {
+    color: $color0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 14px;
+    span {
+      font-weight: 900;
+    }
+  }
+
+  .section-description {
+    color: $color0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 50px;
+  }
+
+  .investment-options {
+    max-width: 984px;
+    margin: 0 auto;
+  }
+
+  .investment-card {
+    border: 1px solid $color0;
+    border-radius: 8px;
+    padding: 0;
+    height: 100%;
+
+    h3 {
+      background: $color0;
+      color: #33363e;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      padding: 12px 0;
+      margin: 0;
+      border-radius: 8px 8px 0 0;
+    }
+
+    p {
+      padding: 20px 24px;
+      color: $color0;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+}
