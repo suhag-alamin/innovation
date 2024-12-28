@@ -16,6 +16,7 @@ import Education from "./pages/Education";
 import Research from "./pages/Research";
 import Superannuation from "./pages/Superannuation";
 import InvestmentFunds from "./pages/InvestmentFunds";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -103,6 +104,14 @@ const App = () => {
                 element={
                   <Layout>
                     <Superannuation />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/contact"
+                element={
+                  <Layout>
+                    <Contact />
                   </Layout>
                 }
               />
