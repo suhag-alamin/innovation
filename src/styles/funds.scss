@@ -215,3 +215,55 @@
     }
   }
 }
+
+// funding section
+.funding-section {
+  padding: 3rem 0;
+
+  .section-header {
+    color: $color0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color0;
+    padding-bottom: 6px;
+    margin-bottom: 36px;
+  }
+
+  .funding-category {
+    margin-bottom: 43px;
+
+    h2 {
+      color: $color0;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 130%;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px dashed $color0;
+    }
+
+    .subcategory {
+      margin-bottom: 1.5rem;
+
+      h3 {
+        color: $color0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+      }
+
+      p {
+        color: $color0;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+      }
+    }
+  }
+}

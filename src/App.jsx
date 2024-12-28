@@ -11,6 +11,7 @@ import AboutInnovat from "./pages/AboutInnovat";
 import Funds from "./pages/Funds";
 import ExchangeTraded from "./pages/ExchangeTraded";
 import Investments from "./pages/Investments";
+import Funding from "./pages/Funding";
 
 const App = () => {
   return (
@@ -42,6 +43,14 @@ const App = () => {
                 element={
                   <Layout>
                     <Funds />
+                  </Layout>
+                }
+              />
+              <Route
+                path="/funding"
+                element={
+                  <Layout>
+                    <Funding />
                   </Layout>
                 }
               />
