@@ -88,6 +88,11 @@
   }
 
   .enquiry-form {
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
     h2 {
       color: $color0;
       font-size: 24px;
@@ -98,32 +103,61 @@
       margin-bottom: 12px;
       border-bottom: 1px dashed $color0;
     }
+    .label {
+      color: $color0;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin-bottom: 6px;
+    }
+    .form-control {
+      border-radius: 8px;
+      border: 1px solid #98a4d7;
+      opacity: 0.5;
+      background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+      padding: 16px 20px;
 
-    .form-control,
+      &::placeholder {
+        color: $color0;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
     .form-select {
-      background-color: rgba(52, 58, 64, 0.5);
-      border: 1px solid rgba(108, 117, 125, 0.2);
-      color: #fff;
-      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #98a4d7;
+      opacity: 0.5;
+      background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+      padding: 16px 20px;
+      color: $color0;
 
-      &:focus {
-        background-color: rgba(52, 58, 64, 0.7);
-        border-color: #8c9eff;
-        box-shadow: none;
+      option {
+        background: #24252b;
+        color: $color0;
+        font-size: 15px;
+        font-weight: 500;
       }
 
       &::placeholder {
-        color: #6c757d;
+        color: $color0;
+        font-size: 15px;
+        font-weight: 500;
       }
     }
 
     .btn-submit {
-      background-color: #8c9eff;
-      border: none;
-      padding: 0.75rem 2rem;
-      color: #212529;
+      border-radius: 8px;
+      border: 1px solid rgba(152, 164, 215, 0.5);
+      background: linear-gradient(180deg, #24252b 0%, #373a40 100%);
+      color: $color0;
+      padding: 16px 50px;
+      font-size: 15px;
       font-weight: 500;
+      line-height: 120%;
+      text-transform: capitalize;
       transition: opacity 0.3s ease;
+      margin-top: 7px;
 
       &:hover {
         opacity: 0.9;

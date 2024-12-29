@@ -101,10 +101,11 @@ const ContactForm = () => {
           <Col lg={7}>
             <div className="enquiry-form">
               <h2>Submit an Enquiry</h2>
-              <Form onSubmit={handleSubmit}>
-                <Row className="mb-3">
+              <Form onSubmit={handleSubmit} className="contact-form">
+                <Row>
                   <Col md={6}>
-                    <Form.Group className="mb-3">
+                    <Form.Group>
+                      <Form.Label className="label">First Name</Form.Label>
                       <Form.Control
                         type="text"
                         placeholder="First Name"
@@ -116,7 +117,8 @@ const ContactForm = () => {
                     </Form.Group>
                   </Col>
                   <Col md={6}>
-                    <Form.Group className="mb-3">
+                    <Form.Group>
+                      <Form.Label className="label">Last Name</Form.Label>
                       <Form.Control
                         type="text"
                         placeholder="Last Name"
@@ -129,7 +131,8 @@ const ContactForm = () => {
                   </Col>
                 </Row>
 
-                <Form.Group className="mb-3">
+                <Form.Group>
+                  <Form.Label className="label">Email Address</Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="Email Address"
@@ -140,7 +143,8 @@ const ContactForm = () => {
                   />
                 </Form.Group>
 
-                <Form.Group className="mb-3">
+                <Form.Group>
+                  <Form.Label className="label">Company Name</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Company Name"
@@ -150,9 +154,10 @@ const ContactForm = () => {
                   />
                 </Form.Group>
 
-                <Row className="mb-3">
+                <Row>
                   <Col md={4}>
-                    <Form.Group className="mb-3">
+                    <Form.Group>
+                      <Form.Label className="label">Country Code</Form.Label>
                       <Form.Select
                         name="countryCode"
                         value={formData.countryCode}
@@ -167,7 +172,8 @@ const ContactForm = () => {
                     </Form.Group>
                   </Col>
                   <Col md={8}>
-                    <Form.Group className="mb-3">
+                    <Form.Group>
+                      <Form.Label className="label">Contact Number</Form.Label>
                       <Form.Control
                         type="tel"
                         placeholder="Contact Number"
@@ -180,7 +186,10 @@ const ContactForm = () => {
                   </Col>
                 </Row>
 
-                <Form.Group className="mb-3">
+                <Form.Group>
+                  <Form.Label className="label">
+                    Please select your enquiry Option{" "}
+                  </Form.Label>
                   <Form.Select
                     name="enquiryStatus"
                     value={formData.enquiryStatus}
@@ -197,7 +206,8 @@ const ContactForm = () => {
                   </Form.Select>
                 </Form.Group>
 
-                <Form.Group className="mb-4">
+                <Form.Group>
+                  <Form.Label className="label">Message</Form.Label>
                   <Form.Control
                     as="textarea"
                     rows={4}
@@ -209,7 +219,7 @@ const ContactForm = () => {
                   />
                 </Form.Group>
 
-                <div className="text-end">
+                <div className="text-center">
                   <Button type="submit" className="btn-submit">
                     Submit
                   </Button>
