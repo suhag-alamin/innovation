@@ -2,6 +2,12 @@
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --color: #94a8fd;
 }
@@ -45,10 +51,22 @@ body {
   font-family: "Roboto", serif !important;
   font-weight: 400;
   color: $color0 !important;
-  line-height: 1.2;
   height: 100%;
   background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
   font-size: 16px;
+  line-height: 130% !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", serif !important;
+  font-weight: 700;
+  color: $color0;
+  line-height: 130% !important;
 }
 
 a {
@@ -135,16 +153,17 @@ img {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
-  padding: 10px 30px;
+  padding: 20px 40px;
   background: transparent;
   color: #8a95c2;
   border: 1px solid $color0;
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  line-height: 120%;
 
   @media (max-width: 768px) {
     font-size: 16px;
-    padding: 8px 15px;
+    padding: 15px 30px;
   }
 }
 

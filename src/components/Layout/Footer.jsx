@@ -6,7 +6,7 @@ import "../../styles/footer.scss";
 const Footer = () => {
   return (
     <div className="footer d-grid gap-4">
-      <Container className="py-2 px-0">
+      <Container className=" px-0">
         <div className="footer-area">
           <div className="row">
             <div className="col-lg-3">
@@ -98,8 +98,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="px-2">
-          <p className="fs-14 mb-0 fw-700">Disclaimer</p>
+        <div className="footer-bottom">
+          <p className="disclaimer">Disclaimer</p>
           <p className="fs-12 ">
             Disclaimer Any information or advice contained on this website is
             general in nature and has been prepared without taking into account

@@ -2,7 +2,8 @@
 
 .footer {
   background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
-  padding-bottom: 70px;
+  // padding-bottom: 70px;
+  padding: 26px 0 24px 0;
   @media (max-width: 768px) {
     padding-bottom: 30px;
   }
@@ -17,13 +18,14 @@
   }
 
   .footer-area {
-    padding: 36px 0px;
-    margin-bottom: 36px;
+    padding-bottom: 29px;
+    margin-bottom: 29px;
     overflow: hidden;
     border-bottom: 1px solid $color0;
 
     @media (max-width: 768px) {
-      padding: 30px 0;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
 
     ul,
@@ -125,5 +127,29 @@
 
   .footerIcon {
     background: transparent !important;
+  }
+
+  .footer-bottom {
+    padding-bottom: 60px;
+    .disclaimer {
+      color: $color0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 130%; /* 18.2px */
+      margin-bottom: 10px;
+    }
+    p {
+      color: $color0;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 130%;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      padding-bottom: 40px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
   }
 }

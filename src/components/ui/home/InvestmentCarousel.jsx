@@ -18,7 +18,7 @@ const InvestmentCarousel = () => {
         <Swiper
           modules={[Navigation]}
           grabCursor={false}
-          spaceBetween={24}
+          spaceBetween={17}
           slidesPerView={1.2}
           navigation={{
             prevEl: navigationPrevRef.current,
