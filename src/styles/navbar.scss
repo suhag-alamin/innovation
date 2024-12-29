@@ -1,0 +1,154 @@
+@import "./index.scss";
+
+.navbar-main {
+  background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  // padding: 12px 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+
+  .container {
+    padding: 0;
+
+    @media (max-width: 1230px) {
+      // padding: 0 15px;
+    }
+  }
+
+  .NavList {
+    // gap: 42px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 69px;
+    margin-right: 66px;
+
+    a {
+      color: $color0;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 0 !important;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      line-height: 120%;
+      padding: 28px 24px !important;
+
+      &.active {
+        background: $color0 !important;
+        color: #33363e !important;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      gap: 30px;
+    }
+  }
+
+  .nav-link {
+    color: $color0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    &.active {
+      color: $color0;
+    }
+  }
+
+  .nav-right-icons {
+    @media (max-width: 575.98px) {
+      flex-direction: row !important;
+    }
+  }
+
+  .navIcon {
+    font-size: 30px;
+    padding: 7px !important;
+    margin: 0px;
+    margin-right: 25px;
+
+    color: $color0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    &.active {
+      color: $color0;
+    }
+
+    @media (max-width: 1199.98px) {
+      margin: 0 10px;
+    }
+
+    @media (max-width: 575.98px) {
+      margin: 0 0;
+      font-size: 25px;
+    }
+  }
+
+  .loginNav {
+    background: $color0;
+    color: #232731;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    height: 70px;
+    padding: 0 18px !important;
+    gap: 7px;
+
+    @media (max-width: 991.98px) {
+      height: 60px;
+    }
+
+    @media (max-width: 575.98px) {
+      padding: 0 10px !important;
+      height: 50px;
+    }
+  }
+
+  .navbar-toggler {
+    padding: 12px 5px;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      filter: invert(82%) sepia(43%) saturate(464%) hue-rotate(194deg)
+        brightness(98%) contrast(103%);
+    }
+  }
+
+  .navbar-brand {
+    @media (max-width: 575.98px) {
+      img {
+        height: 35px;
+      }
+    }
+  }
+}
+
+.offcanvas {
+  @media (max-width: 991.98px) {
+    background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+
+    .nav-link {
+      color: $color0;
+      padding: 10px 15px;
+    }
+
+    .btn-close {
+      filter: invert(82%) sepia(43%) saturate(464%) hue-rotate(194deg)
+        brightness(98%) contrast(103%);
+    }
+    .searchBar {
+      border-left: none;
+    }
+  }
+}

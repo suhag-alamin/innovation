@@ -1,0 +1,129 @@
+@import "./index.scss";
+
+.footer {
+  background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+  padding-bottom: 70px;
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+  }
+  .copyright {
+    font-size: 12px;
+    font-weight: 400;
+    color: $color0;
+    margin-top: 15px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  .footer-area {
+    padding: 36px 0px;
+    margin-bottom: 36px;
+    overflow: hidden;
+    border-bottom: 1px solid $color0;
+
+    @media (max-width: 768px) {
+      padding: 30px 0;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    address {
+      width: 125px;
+      line-height: 120%;
+
+      @media (max-width: 575.98px) {
+        margin: 0 auto;
+      }
+    }
+
+    .connect-icon {
+      @media (max-width: 767.98px) {
+        grid-column: 1/-1;
+      }
+
+      @media (max-width: 575.98px) {
+        .fs-20 {
+          font-size: 18px;
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+        padding-left: 0;
+
+        @media (max-width: 767.98px) {
+          justify-content: center;
+        }
+
+        li {
+          a {
+            width: 35px;
+            height: 35px;
+            color: #485b8f;
+            background: $color0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .footer-weget {
+      ul {
+        // column-count: 3;
+
+        // @media (max-width: 575.98px) {
+        //   column-count: 2;
+        // }
+
+        li {
+          a {
+            color: $color0;
+            font-size: 16px;
+            padding: 4px 0 !important;
+            display: inline-flex;
+
+            @media (max-width: 575.98px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .footerLinks {
+        display: flex;
+        gap: 77px;
+        text-transform: uppercase;
+        .middleRow {
+          margin-left: 60px;
+        }
+      }
+    }
+  }
+
+  .footer-list-phone-show {
+    a {
+      color: $color0;
+      font-size: 16px;
+      padding: 4px 0 !important;
+      display: inline-flex;
+    }
+  }
+
+  .footerIcon {
+    background: transparent !important;
+  }
+}

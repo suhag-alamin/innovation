@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Logo } from "../Image";
+import "../../styles/navbar.scss";
 
 const NavigationBar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -51,25 +52,49 @@ const NavigationBar = () => {
 
 const NavLinkComponent = ({ closeOffcanvas }) => (
   <>
-    <Nav.Link href="/about-innovat" onClick={closeOffcanvas}>
+    <NavLink
+      to="/about-innovat"
+      onClick={closeOffcanvas}
+      className={({ isActive }) => (isActive ? "active" : "")}
+    >
       About Innovat
-    </Nav.Link>
+    </NavLink>
 
-    <Nav.Link href="/investments" onClick={closeOffcanvas}>
+    <NavLink
+      to="/investments"
+      onClick={closeOffcanvas}
+      className={({ isActive }) => (isActive ? "active" : "")}
+    >
       Investments
-    </Nav.Link>
-    <Nav.Link href="/funds" onClick={closeOffcanvas}>
+    </NavLink>
+    <NavLink
+      to="/funding"
+      onClick={closeOffcanvas}
+      className={({ isActive }) => (isActive ? "active" : "")}
+    >
       Funding
-    </Nav.Link>
-    <Nav.Link href="/education" onClick={closeOffcanvas}>
+    </NavLink>
+    <NavLink
+      to="/education"
+      onClick={closeOffcanvas}
+      className={({ isActive }) => (isActive ? "active" : "")}
+    >
       Education
-    </Nav.Link>
-    <Nav.Link href="/research" onClick={closeOffcanvas}>
+    </NavLink>
+    <NavLink
+      to="/research"
+      onClick={closeOffcanvas}
+      className={({ isActive }) => (isActive ? "active" : "")}
+    >
       Research
-    </Nav.Link>
-    <Nav.Link href="/contact" onClick={closeOffcanvas}>
+    </NavLink>
+    <NavLink
+      to="/contact"
+      onClick={closeOffcanvas}
+      className={({ isActive }) => (isActive ? "active" : "")}
+    >
       Contact
-    </Nav.Link>
+    </NavLink>
   </>
 );
 
