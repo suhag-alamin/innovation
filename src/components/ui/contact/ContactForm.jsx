@@ -1,12 +1,19 @@
-import { useState } from "react";
+/* eslint-disable no-unused-vars */
+import { useRef, useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import { LinkedIn2, Twitter2, Youtube2 } from "../../Image";
+import ContactDetails from "./ContactDetails";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const formRef = useRef(null);
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
+    user_email: "",
     companyName: "",
     countryCode: "",
     contactNumber: "",
@@ -14,10 +21,36 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission
+  //   console.log(formData);
+  // };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+
+    setIsLoading(true);
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          import.meta.env.NEXT_PUBLIC_SERVICE_ID,
+          import.meta.env.NEXT_PUBLIC_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.NEXT_PUBLIC_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            setIsLoading(false);
+            setIsSuccess(true);
+          },
+          (error) => {
+            // console.log(error.text);
+            alert("Something went wrong!  Try again later.");
+            setIsLoading(false);
+          }
+        );
+    }
   };
 
   const handleChange = (e) => {
@@ -33,75 +66,17 @@ const ContactForm = () => {
       <Container>
         <Row className="g-5">
           <Col lg={5}>
-            <div className="company-info">
-              <h2>Innovat (UK) Limited</h2>
-
-              <div className="info-group">
-                <h3>Address</h3>
-                <p>123 Innovation Street</p>
-                <p>Tech City, London EC1V 9NR</p>
-                <p>United Kingdom</p>
-              </div>
-
-              <div className="info-group">
-                <h3>Contact</h3>
-                <p>Phone: +44 20 1234 5678</p>
-                <p>Email: info@innovat-global.co.uk</p>
-              </div>
-
-              <div className="info-group last">
-                <h3>Office Hours</h3>
-                <p>Monday to Friday: 9:00 AM - 5:30 PM GMT</p>
-                <p>Saturday & Sunday: Closed</p>
-              </div>
-
-              <div className="social-media">
-                <h3>Connect with Us on Social Media</h3>
-                <p>
-                  Stay up-to-date with the latest news, insights, and
-                  developments from Innovat. Follow us on our social media
-                  channels to engage with our community, learn about our
-                  innovative projects, and get a closer look at the future of
-                  infrastructure and technology investments.
-                </p>
-                <ul>
-                  <li>
-                    <span>LinkedIn:</span> Join our professional network for
-                    industry updates and thought leadership.
-                  </li>
-                  <li>
-                    <span>Twitter:</span> Follow us for real-time news, trends,
-                    and updates in the world of innovation and investment.
-                  </li>
-                  <li>
-                    <span>YouTube:</span> Watch our latest videos, webinars, and
-                    interviews on transformative technologies and investments.
-                  </li>
-                </ul>
-                <p>
-                  We’d love to hear from you—engage with us and be part of the
-                  conversation shaping the future.
-                </p>
-
-                <div className="social-links">
-                  <a href="#" aria-label="LinkedIn">
-                    <LinkedIn2 />
-                  </a>
-                  <a href="#" aria-label="Twitter">
-                    <Twitter2 />
-                  </a>
-                  <a href="#" aria-label="YouTube">
-                    <Youtube2 />
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ContactDetails />
           </Col>
 
           <Col lg={7}>
             <div className="enquiry-form">
               <h2>Submit an Enquiry</h2>
-              <Form onSubmit={handleSubmit} className="contact-form">
+              <Form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="contact-form"
+              >
                 <Row>
                   <Col md={6}>
                     <Form.Group>
@@ -136,7 +111,7 @@ const ContactForm = () => {
                   <Form.Control
                     type="email"
                     placeholder="Email Address"
-                    name="email"
+                    name="user_email"
                     value={formData.email}
                     onChange={handleChange}
                     required
