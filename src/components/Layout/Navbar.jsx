@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import { Logo } from "../Image";
 import "../../styles/navbar.scss";
+import { Logo } from "../Image";
 
 const NavigationBar = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -38,8 +38,8 @@ const NavigationBar = () => {
                 </Link>
               </Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-center NavList">
+            <Offcanvas.Body className="justify-content-end">
+              <Nav className=" NavList">
                 <NavLinkComponent closeOffcanvas={closeOffcanvas} />
               </Nav>
             </Offcanvas.Body>
