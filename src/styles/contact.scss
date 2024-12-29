@@ -117,6 +117,7 @@
       opacity: 0.5;
       background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
       padding: 16px 20px;
+      color: $color1;
 
       &::placeholder {
         color: $color0;
@@ -163,5 +164,19 @@
         opacity: 0.9;
       }
     }
+  }
+}
+
+.thank-you-text {
+  color: $color0;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  max-width: 50%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 }

@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import ContactDetails from "./ContactDetails";
 import emailjs from "@emailjs/browser";
+import { Check } from "../../Image";
 
 const ContactForm = () => {
   const formRef = useRef(null);
@@ -21,12 +22,6 @@ const ContactForm = () => {
     message: "",
   });
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Handle form submission
-  //   console.log(formData);
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -34,10 +29,10 @@ const ContactForm = () => {
     if (formRef.current) {
       emailjs
         .sendForm(
-          import.meta.env.NEXT_PUBLIC_SERVICE_ID,
-          import.meta.env.NEXT_PUBLIC_TEMPLATE_ID,
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
           formRef.current,
-          import.meta.env.NEXT_PUBLIC_PUBLIC_KEY
+          import.meta.env.VITE_PUBLIC_KEY
         )
         .then(
           (result) => {
@@ -45,7 +40,7 @@ const ContactForm = () => {
             setIsSuccess(true);
           },
           (error) => {
-            // console.log(error.text);
+            console.log(error);
             alert("Something went wrong!  Try again later.");
             setIsLoading(false);
           }
@@ -64,145 +59,163 @@ const ContactForm = () => {
   return (
     <div className="contact-section">
       <Container>
-        <Row className="g-5">
-          <Col lg={5}>
-            <ContactDetails />
-          </Col>
+        {!isSuccess && !isLoading ? (
+          <Row className="g-5">
+            <Col lg={5}>
+              <ContactDetails />
+            </Col>
 
-          <Col lg={7}>
-            <div className="enquiry-form">
-              <h2>Submit an Enquiry</h2>
-              <Form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="contact-form"
-              >
-                <Row>
-                  <Col md={6}>
-                    <Form.Group>
-                      <Form.Label className="label">First Name</Form.Label>
-                      <Form.Control
-                        type="text"
-                        placeholder="First Name"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        required
-                      />
-                    </Form.Group>
-                  </Col>
-                  <Col md={6}>
-                    <Form.Group>
-                      <Form.Label className="label">Last Name</Form.Label>
-                      <Form.Control
-                        type="text"
-                        placeholder="Last Name"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        required
-                      />
-                    </Form.Group>
-                  </Col>
-                </Row>
+            <Col lg={7}>
+              <div className="enquiry-form">
+                <h2>Submit an Enquiry</h2>
+                <Form
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                  className="contact-form"
+                >
+                  <Row>
+                    <Col md={6}>
+                      <Form.Group>
+                        <Form.Label className="label">First Name</Form.Label>
+                        <Form.Control
+                          type="text"
+                          placeholder="First Name"
+                          name="firstName"
+                          value={formData.firstName}
+                          onChange={handleChange}
+                          required
+                        />
+                      </Form.Group>
+                    </Col>
+                    <Col md={6}>
+                      <Form.Group>
+                        <Form.Label className="label">Last Name</Form.Label>
+                        <Form.Control
+                          type="text"
+                          placeholder="Last Name"
+                          name="lastName"
+                          value={formData.lastName}
+                          onChange={handleChange}
+                          required
+                        />
+                      </Form.Group>
+                    </Col>
+                  </Row>
 
-                <Form.Group>
-                  <Form.Label className="label">Email Address</Form.Label>
-                  <Form.Control
-                    type="email"
-                    placeholder="Email Address"
-                    name="user_email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </Form.Group>
+                  <Form.Group>
+                    <Form.Label className="label">Email Address</Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="Email Address"
+                      name="user_email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </Form.Group>
 
-                <Form.Group>
-                  <Form.Label className="label">Company Name</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="Company Name"
-                    name="companyName"
-                    value={formData.companyName}
-                    onChange={handleChange}
-                  />
-                </Form.Group>
+                  <Form.Group>
+                    <Form.Label className="label">Company Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Company Name"
+                      name="companyName"
+                      value={formData.companyName}
+                      onChange={handleChange}
+                    />
+                  </Form.Group>
 
-                <Row>
-                  <Col md={4}>
-                    <Form.Group>
-                      <Form.Label className="label">Country Code</Form.Label>
-                      <Form.Select
-                        name="countryCode"
-                        value={formData.countryCode}
-                        onChange={handleChange}
-                        required
-                      >
-                        <option value="">Country Code</option>
-                        <option value="+44">+44 (UK)</option>
-                        <option value="+1">+1 (US/CA)</option>
-                        {/* Add more country codes as needed */}
-                      </Form.Select>
-                    </Form.Group>
-                  </Col>
-                  <Col md={8}>
-                    <Form.Group>
-                      <Form.Label className="label">Contact Number</Form.Label>
-                      <Form.Control
-                        type="tel"
-                        placeholder="Contact Number"
-                        name="contactNumber"
-                        value={formData.contactNumber}
-                        onChange={handleChange}
-                        required
-                      />
-                    </Form.Group>
-                  </Col>
-                </Row>
+                  <Row>
+                    <Col md={4}>
+                      <Form.Group>
+                        <Form.Label className="label">Country Code</Form.Label>
+                        <Form.Select
+                          name="countryCode"
+                          value={formData.countryCode}
+                          onChange={handleChange}
+                          required
+                        >
+                          <option value="">Country Code</option>
+                          <option value="+44">+44 (UK)</option>
+                          <option value="+1">+1 (US/CA)</option>
+                          {/* Add more country codes as needed */}
+                        </Form.Select>
+                      </Form.Group>
+                    </Col>
+                    <Col md={8}>
+                      <Form.Group>
+                        <Form.Label className="label">
+                          Contact Number
+                        </Form.Label>
+                        <Form.Control
+                          type="tel"
+                          placeholder="Contact Number"
+                          name="contactNumber"
+                          value={formData.contactNumber}
+                          onChange={handleChange}
+                          required
+                        />
+                      </Form.Group>
+                    </Col>
+                  </Row>
 
-                <Form.Group>
-                  <Form.Label className="label">
-                    Please select your enquiry Option{" "}
-                  </Form.Label>
-                  <Form.Select
-                    name="enquiryStatus"
-                    value={formData.enquiryStatus}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="">Please Select Your Enquiry Status</option>
-                    <option value="investor">Individual Investor</option>
-                    <option value="institutional">
-                      Institutional Investor
-                    </option>
-                    <option value="advisor">Financial Advisor</option>
-                    <option value="other">Other</option>
-                  </Form.Select>
-                </Form.Group>
+                  <Form.Group>
+                    <Form.Label className="label">
+                      Please select your enquiry Option{" "}
+                    </Form.Label>
+                    <Form.Select
+                      name="enquiryStatus"
+                      value={formData.enquiryStatus}
+                      onChange={handleChange}
+                      required
+                    >
+                      <option value="">
+                        Please Select Your Enquiry Status
+                      </option>
+                      <option value="investor">Individual Investor</option>
+                      <option value="institutional">
+                        Institutional Investor
+                      </option>
+                      <option value="advisor">Financial Advisor</option>
+                      <option value="other">Other</option>
+                    </Form.Select>
+                  </Form.Group>
 
-                <Form.Group>
-                  <Form.Label className="label">Message</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    rows={4}
-                    placeholder="Message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  />
-                </Form.Group>
+                  <Form.Group>
+                    <Form.Label className="label">Message</Form.Label>
+                    <Form.Control
+                      as="textarea"
+                      rows={4}
+                      placeholder="Message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                    />
+                  </Form.Group>
 
-                <div className="text-center">
-                  <Button type="submit" className="btn-submit">
-                    Submit
-                  </Button>
-                </div>
-              </Form>
-            </div>
-          </Col>
-        </Row>
+                  <div className="text-center">
+                    <Button
+                      type="submit"
+                      className="btn-submit"
+                      disabled={isLoading}
+                    >
+                      Submit
+                    </Button>
+                  </div>
+                </Form>
+              </div>
+            </Col>
+          </Row>
+        ) : (
+          <div className="d-flex flex-column justify-content-center align-items-center">
+            <Check />
+            <h4 className="thank-you-text">
+              Thank you, we have received your enquiry and will be in contact
+              with you shortly.
+            </h4>
+          </div>
+        )}
       </Container>
     </div>
   );
