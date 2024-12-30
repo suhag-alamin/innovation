@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const ResearchSection = () => {
   const researchContent = {
@@ -51,13 +51,13 @@ const ResearchSection = () => {
   return (
     <div className="research-section">
       <div className="section-header">
-        <Container>
+        <div className="icontainer">
           <h2>Research</h2>
-        </Container>
+        </div>
       </div>
-      <Container>
-        <Row>
-          <Col lg={6}>
+      <div className="icontainer research-content">
+        <Row className="research-row">
+          <Col lg={5}>
             {researchContent.leftColumn.map((item, index) => (
               <div key={index} className="research-category">
                 <h3>{item.title}</h3>
@@ -65,7 +65,7 @@ const ResearchSection = () => {
               </div>
             ))}
           </Col>
-          <Col lg={6}>
+          <Col lg={5}>
             {researchContent.rightColumn.map((item, index) => (
               <div key={index} className="research-category">
                 <h3>{item.title}</h3>
@@ -74,7 +74,7 @@ const ResearchSection = () => {
             ))}
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 };

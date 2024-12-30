@@ -1,16 +1,19 @@
 @import "../styles/index.scss";
 
 .research-section {
-  padding-bottom: 3rem;
-
+  .research-content {
+    padding: 37px 88px 53.994px 41px;
+  }
+  .research-row {
+    gap: 71px;
+  }
   .section-header {
     background: $color0;
     color: #33363e;
     font-size: 36px;
     font-weight: 700;
     line-height: 120%;
-    padding: 24px 0;
-    margin-bottom: 27px;
+    padding: 23px 0 24px 37px;
     h2 {
       margin: 0;
     }
@@ -34,6 +37,33 @@
       font-size: 15px;
       font-weight: 400;
       line-height: 130%;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .research-content {
+      padding: 37px 20px 53.994px 20px;
+    }
+    .research-row {
+      gap: 20px;
+    }
+    .section-header {
+      padding: 23px 0 24px 20px;
+    }
+
+    .research-category {
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 20px;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 15px;
+      }
     }
   }
 }

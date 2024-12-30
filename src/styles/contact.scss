@@ -1,9 +1,11 @@
 @import "../styles/index.scss";
 
 .contact-section {
-  padding: 3rem 0;
+  padding: 45px 41px 50px 30px;
   color: $color0;
-
+  .contact-form-section-row {
+    gap: 70px;
+  }
   .company-info {
     h2 {
       color: $color0;
@@ -162,6 +164,67 @@
 
       &:hover {
         opacity: 0.9;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 45px 20px 50px 20px;
+    .contact-form-section-row {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .company-info {
+      .info-group {
+        padding-bottom: 6px;
+        margin-bottom: 6px;
+      }
+      .social-media {
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+        }
+        ul {
+          li {
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+        .social-links {
+          gap: 20px;
+          a {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+    .enquiry-form {
+      h2 {
+        font-size: 20px;
+      }
+      .label {
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+      .form-control {
+        padding: 12px 16px;
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      .form-select {
+        padding: 12px 16px;
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      .btn-submit {
+        padding: 12px 40px;
+        font-size: 14px;
       }
     }
   }

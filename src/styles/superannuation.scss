@@ -1,15 +1,19 @@
 @import "../styles/index.scss";
 
 .superannuation-section {
-  padding-bottom: 3rem;
-
+  .sub-section {
+    padding: 31px 88px 50px 41px;
+  }
+  .super-category-row {
+    gap: 71px;
+  }
   .section-header {
     background: $color0;
     color: #33363e;
     font-size: 36px;
     font-weight: 700;
     line-height: 120%;
-    padding: 24px 0;
+    padding: 28px 0 27px 37px;
     margin-bottom: 27px;
     h2 {
       margin: 0;
@@ -34,6 +38,34 @@
       font-size: 15px;
       font-weight: 400;
       line-height: 130%;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .sub-section {
+      padding: 0 20px 50px 20px;
+    }
+    .section-header {
+      padding: 23px 0 20px 37px;
+    }
+
+    .super-category-row {
+      gap: 20px;
+    }
+
+    .super-category {
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 15px;
+      }
     }
   }
 }

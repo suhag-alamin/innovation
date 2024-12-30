@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import { useRef, useState } from "react";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import ContactDetails from "./ContactDetails";
 import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import { Button, Col, Form, Row } from "react-bootstrap";
 import { Check } from "../../Image";
+import ContactDetails from "./ContactDetails";
 
 const ContactForm = () => {
   const formRef = useRef(null);
@@ -58,14 +58,14 @@ const ContactForm = () => {
 
   return (
     <div className="contact-section">
-      <Container>
+      <div className="icontainer">
         {!isSuccess && !isLoading ? (
-          <Row className="g-5">
+          <Row className="contact-form-section-row">
             <Col lg={5}>
               <ContactDetails />
             </Col>
 
-            <Col lg={7}>
+            <Col lg={6}>
               <div className="enquiry-form">
                 <h2>Submit an Enquiry</h2>
                 <Form
@@ -216,7 +216,7 @@ const ContactForm = () => {
             </h4>
           </div>
         )}
-      </Container>
+      </div>
     </div>
   );
 };

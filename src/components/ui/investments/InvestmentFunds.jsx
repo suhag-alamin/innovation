@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const InvestmentFundsSection = () => {
   const investmentOptions = [
@@ -25,13 +25,13 @@ const InvestmentFundsSection = () => {
   ];
 
   return (
-    <div className="investment-funds">
+    <div className="investment-funds-section">
       <div className="section-header">
-        <Container>
+        <div className="icontainer">
           <h2>Investment Funds</h2>
-        </Container>
+        </div>
       </div>
-      <Container>
+      <div className="icontainer section-content">
         <h3 className="section-subheader">
           How to Invest in <span>Innovat™</span> ETFs
         </h3>
@@ -51,7 +51,7 @@ const InvestmentFundsSection = () => {
             </Col>
           ))}
         </Row>
-      </Container>
+      </div>
     </div>
   );
 };

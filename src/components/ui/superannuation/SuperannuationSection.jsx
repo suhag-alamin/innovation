@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const SuperannuationSection = () => {
   const superContent = {
@@ -46,13 +46,13 @@ const SuperannuationSection = () => {
   return (
     <div className="superannuation-section">
       <div className="section-header">
-        <Container>
+        <div className="icontainer">
           <h2>Superannuation / Retirement Funds</h2>
-        </Container>
+        </div>
       </div>
-      <Container>
-        <Row>
-          <Col lg={6}>
+      <div className="icontainer sub-section">
+        <Row className="super-category-row">
+          <Col lg={5}>
             {superContent.leftColumn.map((item, index) => (
               <div key={index} className="super-category">
                 <h3>{item.title}</h3>
@@ -60,7 +60,7 @@ const SuperannuationSection = () => {
               </div>
             ))}
           </Col>
-          <Col lg={6}>
+          <Col lg={5}>
             {superContent.rightColumn.map((item, index) => (
               <div key={index} className="super-category">
                 <h3>{item.title}</h3>
@@ -69,7 +69,7 @@ const SuperannuationSection = () => {
             ))}
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 };
