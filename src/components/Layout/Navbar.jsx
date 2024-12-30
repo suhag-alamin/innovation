@@ -38,7 +38,7 @@ const NavigationBar = () => {
               </Link>
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body className="justify-content-ed">
+          <Offcanvas.Body>
             <Nav className=" NavList">
               <NavLinkComponent closeOffcanvas={closeOffcanvas} />
             </Nav>

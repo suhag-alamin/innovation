@@ -1,7 +1,7 @@
 @import "./index.scss";
 
 .fund-categories {
-  padding: 31px 0 50px 0;
+  padding: 44px 54px 50px 37px;
 
   .category-column {
     h2 {
@@ -36,6 +36,43 @@
           font-size: 9px;
           color: $color0;
           opacity: 0.75;
+        }
+      }
+    }
+
+    &.bottom {
+      margin-top: 44px;
+    }
+  }
+
+  .view-all-funds {
+    display: flex;
+    justify-content: end;
+    p {
+      color: $color0;
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 120%;
+      text-transform: uppercase;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 44px 20px 50px 20px;
+
+    .category-column {
+      h2 {
+        font-size: 14px;
+      }
+
+      ul {
+        li {
+          h5 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 8px;
+          }
         }
       }
     }

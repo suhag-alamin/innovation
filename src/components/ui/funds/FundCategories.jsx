@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const FundCategories = () => {
   const half = Math.ceil(categories.activeFunds.length / 2);
@@ -9,7 +9,10 @@ const FundCategories = () => {
 
   return (
     <div className="fund-categories">
-      <Container>
+      <div className="icontainer">
+        <div className="view-all-funds">
+          <p>View All Funds</p>
+        </div>
         <Row>
           <Col md={8} className="category-column">
             <h2>Active Funds</h2>
@@ -55,7 +58,24 @@ const FundCategories = () => {
             </ul>
           </Col>
         </Row>
-      </Container>
+        <Row>
+          <Col md={5} className="category-column bottom">
+            <h2>Superannuation / retirement Funds</h2>
+            <ul>
+              <li>
+                <h5>
+                  <span>Innovat™</span> Innovat™ Global Innovation
+                </h5>
+                <p>
+                  Digital infrastructure, energy transition, artificial
+                  intelligence, blockchain, mobility and transportation,
+                  autonomous systems
+                </p>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 };

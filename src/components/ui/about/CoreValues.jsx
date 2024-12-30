@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import SectionTitle from "../SectionTitle";
 
 const CoreValues = () => {
