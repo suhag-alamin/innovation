@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { Container } from "react-bootstrap";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +13,7 @@ const InvestmentCarousel = () => {
 
   return (
     <>
-      <Container fluid className="investment-slider">
+      <div className="investment-slider">
         <Swiper
           modules={[Navigation]}
           grabCursor={false}
@@ -47,9 +46,11 @@ const InvestmentCarousel = () => {
                     <img src={category.icon} alt="" className="icon-mobile" />
                   </div>
 
-                  <div>
-                    <h3>{category.title}</h3>
-                    <p className="card-content">{category.description}</p>
+                  <div className="card-content-box">
+                    <div>
+                      <h3>{category.title}</h3>
+                      <p className="card-content">{category.description}</p>
+                    </div>
                     <button className="find-out-more">Find Out More</button>
                   </div>
                 </div>
@@ -65,7 +66,7 @@ const InvestmentCarousel = () => {
         >
           <ArrowCircleRight />
         </button>
-      </Container>
+      </div>
     </>
   );
 };
@@ -74,25 +75,26 @@ export default InvestmentCarousel;
 
 const investmentCategories = [
   {
-    id: 1,
-    title: "Innovat™ Clean Energy",
-    icon: fuel,
-    description:
-      "Invest in companies that are leading the way in the development of clean energy technologies, such as solar, wind, and geothermal.",
-  },
-  {
     id: 2,
     title: "Innovat™ Digital Infrastructure",
+    icon: fuel,
+    description:
+      "Invests in companies that are developing digital infrastructure solutions such as cloud computing platforms, data storage systems, network security solutions etc.",
+  },
+  {
+    id: 1,
+    title: "Innovat™ Clean Energy",
     icon: memory,
     description:
-      "This fund invests in companies that are developing digital infrastructure solutions such as cloud computing platforms, data storage systems, network security solutions etc.",
+      "Invest in companies that are leading the way in the development of clean energy technologies, such as solar, nuclear, wind, and geothermal",
   },
+
   {
     id: 3,
     title: "Innovat™ Autonomous Tech",
     icon: electricCar,
     description:
-      "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
+      "Invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 4,
