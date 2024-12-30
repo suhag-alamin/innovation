@@ -27,8 +27,14 @@
 
   .navbar-brand {
     margin: 0;
+    padding: 0;
     width: 145px;
     height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   .NavList {
@@ -43,7 +49,6 @@
       color: $color0;
       font-size: 20px;
       font-weight: 700;
-      padding: 0 !important;
       margin: 0;
       display: flex;
       align-items: center;
@@ -104,13 +109,219 @@
         padding-right: 47px !important;
       }
       //   @media (max-width: 1199.98px) {
-      @media (max-width: 1260px) {
+      @media (max-width: 1290px) {
         padding: 30px !important;
-        font-size: 16px;
+        // font-size: 16px;
+
+        &.about {
+          padding-left: 35px !important;
+          padding-right: 35px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+        &.investments {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+        &.funding {
+          padding-left: 35px !important;
+          padding-right: 35px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+        &.education-link {
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+        &.research {
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+        &.contact {
+          padding-left: 35px !important;
+          padding-right: 35px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+
+        &.active {
+          // // padding: 20px !important;
+
+          // &.about {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.investments {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.funding {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.education-link {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.research {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.contact {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          &.about {
+            padding-left: 35px !important;
+            padding-right: 35px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+          &.investments {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+          }
+          &.funding {
+            padding-left: 35px !important;
+            padding-right: 35px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+          &.education-link {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+          &.research {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+          &.contact {
+            padding-left: 35px !important;
+            padding-right: 35px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+        }
+      }
+      @media (max-width: 1170px) {
+        padding: 30px !important;
+        // font-size: 16px;
+
+        &.about {
+          padding-left: 25px !important;
+          padding-right: 25px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+        &.investments {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+        &.funding {
+          padding-left: 25px !important;
+          padding-right: 25px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+        &.education-link {
+          padding-left: 25px !important;
+          padding-right: 25px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+        &.research {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+        &.contact {
+          padding-left: 25px !important;
+          padding-right: 25px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
+        }
+
+        &.active {
+          // // padding: 20px !important;
+
+          // &.about {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.investments {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.funding {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.education-link {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.research {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.contact {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          &.about {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+          &.investments {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+          }
+          &.funding {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+          &.education-link {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+          &.research {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+          &.contact {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
+          }
+        }
+      }
+      @media (max-width: 1080px) {
+        padding: 25px !important;
+        font-size: 18px;
 
         &.about {
           padding-left: 20px !important;
           padding-right: 20px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
         }
         &.investments {
           padding-left: 20px !important;
@@ -119,26 +330,60 @@
         &.funding {
           padding-left: 20px !important;
           padding-right: 20px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
         }
         &.education-link {
           padding-left: 20px !important;
           padding-right: 20px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
         }
         &.research {
           padding-left: 20px !important;
           padding-right: 20px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
         }
         &.contact {
           padding-left: 20px !important;
           padding-right: 20px !important;
+          // padding-left: 20px !important;
+          // padding-right: 20px !important;
         }
 
         &.active {
-          // padding: 20px !important;
+          // // padding: 20px !important;
 
+          // &.about {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.investments {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.funding {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.education-link {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.research {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
+          // &.contact {
+          //   padding-left: 20px !important;
+          //   padding-right: 20px !important;
+          // }
           &.about {
             padding-left: 20px !important;
             padding-right: 20px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
           }
           &.investments {
             padding-left: 20px !important;
@@ -147,18 +392,26 @@
           &.funding {
             padding-left: 20px !important;
             padding-right: 20px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
           }
           &.education-link {
             padding-left: 20px !important;
             padding-right: 20px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
           }
           &.research {
             padding-left: 20px !important;
             padding-right: 20px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
           }
           &.contact {
             padding-left: 20px !important;
             padding-right: 20px !important;
+            // padding-left: 20px !important;
+            // padding-right: 20px !important;
           }
         }
       }
