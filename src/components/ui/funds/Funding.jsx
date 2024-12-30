@@ -1,12 +1,12 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const FundingSection = () => {
   return (
     <div className="funding-section">
-      <Container>
+      <div className="icontainer">
         <h1 className="section-header">Funding</h1>
-        <Row>
-          <Col lg={6}>
+        <Row className="funding-categories-row">
+          <Col lg={5}>
             <div className="funding-category">
               <h2>Venture Capital & Private Equity</h2>
 
@@ -70,7 +70,7 @@ const FundingSection = () => {
             </div>
           </Col>
 
-          <Col lg={6}>
+          <Col lg={5}>
             <div className="funding-category">
               <h2>Innovation and Development</h2>
 
@@ -144,7 +144,7 @@ const FundingSection = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 };
