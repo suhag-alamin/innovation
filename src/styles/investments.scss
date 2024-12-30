@@ -1,22 +1,33 @@
 @import "../styles/index.scss";
 
 .investment-categories {
-  padding: 3rem 0;
+  padding: 59px 88px 59px 41px;
   color: #fff;
 
   .header-text {
     color: $color0;
     text-align: center;
-    font-family: Roboto;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    margin-bottom: 60px;
-  }
+    width: 1034px;
+    margin: auto;
+    margin-bottom: 62px;
 
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+  .categories-row {
+    gap: 71px;
+  }
   .category {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     h3 {
       color: $color0;
@@ -47,7 +58,20 @@
     text-transform: uppercase;
     border-bottom: 1px solid $color0;
     margin-bottom: 34px;
-    padding-bottom: 6px;
+    margin-top: 48px;
+    padding: 13px 1009.973px 2.797px 0px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 40px 20px;
+    .categories-row {
+      gap: 20px;
+    }
+    .header-text {
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
   }
 }
 

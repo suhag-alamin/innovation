@@ -1,17 +1,17 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const InvestmentCategories = () => {
   return (
     <div className="investment-categories">
-      <Container>
+      <div className="icontainer">
         <p className="header-text">
           We invest in data centers and the energy systems that power them,
           delivering the essential infrastructure driving the AI and digital
           revolution.
         </p>
 
-        <Row>
-          <Col md={6}>
+        <Row className="categories-row">
+          <Col md={5}>
             {categories.topCategories
               .slice(0, Math.ceil(categories.topCategories.length / 2))
               .map((category, index) => (
@@ -21,7 +21,7 @@ const InvestmentCategories = () => {
                 </div>
               ))}
           </Col>
-          <Col md={6}>
+          <Col md={5}>
             {categories.topCategories
               .slice(Math.ceil(categories.topCategories.length / 2))
               .map((category, index) => (
@@ -35,8 +35,8 @@ const InvestmentCategories = () => {
 
         <div className="transformation-header">TRANSFORMATION</div>
 
-        <Row>
-          <Col md={6}>
+        <Row className="categories-row">
+          <Col md={5}>
             {categories.transformationCategories
               .slice(
                 0,
@@ -49,7 +49,7 @@ const InvestmentCategories = () => {
                 </div>
               ))}
           </Col>
-          <Col md={6}>
+          <Col md={5}>
             {categories.transformationCategories
               .slice(Math.ceil(categories.transformationCategories.length / 2))
               .map((category, index) => (
@@ -60,7 +60,7 @@ const InvestmentCategories = () => {
               ))}
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 };

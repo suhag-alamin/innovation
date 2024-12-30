@@ -5,7 +5,7 @@ import { LinkedIn, Logo, Twitter, Youtube } from "../Image";
 const Footer = () => {
   return (
     <div className="footer d-grid gap-4">
-      <div className="icontianer">
+      <div className="icontainer">
         <div className="footer-area">
           <div className="row">
             <div className="col-lg-3">

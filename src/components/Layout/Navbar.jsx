@@ -13,37 +13,39 @@ const NavigationBar = () => {
     <>
       {/* fixed="top" */}
       <Navbar expand="lg" className="navbar-main">
-        <Navbar.Brand className="navbar-brand">
-          <Link to="/">
-            <Logo />
-          </Link>
-        </Navbar.Brand>
-        <div className="d-flex align-items-center gap-3">
-          <Navbar.Toggle
-            aria-controls="offcanvasNavbar-expand-lg"
-            onClick={() => setShowOffcanvas((prev) => !prev)}
-          />
+        <div className="icontainer d-flex align-items-center justify-content-between h-100 w-100">
+          <Navbar.Brand className="navbar-brand">
+            <Link to="/">
+              <Logo />
+            </Link>
+          </Navbar.Brand>
+          <div className="d-flex align-items-center gap-3">
+            <Navbar.Toggle
+              aria-controls="offcanvasNavbar-expand-lg"
+              onClick={() => setShowOffcanvas((prev) => !prev)}
+            />
+          </div>
+          <Navbar.Offcanvas
+            show={showOffcanvas}
+            onHide={closeOffcanvas}
+            id="offcanvasNavbar-expand-lg"
+            aria-labelledby="offcanvasNavbarLabel-expand-lg"
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
+                <Link to="/">
+                  <Logo />
+                </Link>
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className=" NavList">
+                <NavLinkComponent closeOffcanvas={closeOffcanvas} />
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
         </div>
-        <Navbar.Offcanvas
-          show={showOffcanvas}
-          onHide={closeOffcanvas}
-          id="offcanvasNavbar-expand-lg"
-          aria-labelledby="offcanvasNavbarLabel-expand-lg"
-          placement="end"
-        >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-              <Link to="/">
-                <Logo />
-              </Link>
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Nav className=" NavList">
-              <NavLinkComponent closeOffcanvas={closeOffcanvas} />
-            </Nav>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
       </Navbar>
     </>
   );
