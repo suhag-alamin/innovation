@@ -13,7 +13,7 @@ export default function FinancialTable() {
   );
 
   return (
-    <div className="financial-table-container">
+    <div className="financial-table-container icontainer">
       <div className="financial-table-header">
         <h2>Exchange Traded / Mutual Funds</h2>
       </div>
@@ -51,8 +51,8 @@ export default function FinancialTable() {
               <th>Units Outstanding</th>
               <th>Expense Ratio</th>
               <th>Fund Type</th>
-              <th>Fact Sheet</th>
-              <th>Minimum $250k</th>
+              <th className="text-center">Fact Sheet</th>
+              <th className="text-center">Minimum $250k</th>
             </tr>
           </thead>
           <tbody>
@@ -69,7 +69,7 @@ export default function FinancialTable() {
                 <td>{fund.unitsOutstanding}</td>
                 <td>{fund.expenseRatio}</td>
                 <td>{fund.fundType}</td>
-                <td>
+                <td className="text-center">
                   <FileText />
                 </td>
                 <td>
