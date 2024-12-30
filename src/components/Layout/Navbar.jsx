@@ -34,9 +34,11 @@ const NavigationBar = () => {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                <Link to="/">
-                  <Logo />
-                </Link>
+                <div className="navbar-brand">
+                  <Link to="/">
+                    <Logo />
+                  </Link>
+                </div>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
