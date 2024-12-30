@@ -50,9 +50,9 @@ const InvestmentCarousel = () => {
                   <div>
                     <h3>{category.title}</h3>
                     <p className="card-content">{category.description}</p>
+                    <button className="find-out-more">Find Out More</button>
                   </div>
                 </div>
-                <button className="find-out-more">Find Out More</button>
               </div>
             </SwiperSlide>
           ))}

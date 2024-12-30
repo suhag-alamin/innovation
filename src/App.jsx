@@ -24,7 +24,7 @@ const App = () => {
       <BrowserRouter>
         <>
           <div className="gradient-background"></div>
-          <div className="content">
+          <div>
             <Routes>
               <Route
                 index

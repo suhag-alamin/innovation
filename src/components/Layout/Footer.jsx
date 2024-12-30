@@ -101,9 +101,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <p className="disclaimer">Disclaimer</p>
           <p className="fs-12 ">
-            Disclaimer Any information or advice contained on this website is
-            general in nature and has been prepared without taking into account
-            your objectives, financial situation or needs. Before acting on any
+            Any information or advice contained on this website is general in
+            nature and has been prepared without taking into account your
+            objectives, financial situation or needs. Before acting on any
             information or advice on this website, you should consider the
             appropriateness of it (and any relevant product) having regard to
             your circumstances and, if a current offer document is available,

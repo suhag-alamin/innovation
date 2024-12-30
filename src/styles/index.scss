@@ -9,7 +9,7 @@
 }
 
 :root {
-  --color: #94a8fd;
+  --color: #98a4d7;
 }
 
 .roboto-regular {
@@ -86,6 +86,15 @@ img {
   background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
   background-attachment: fixed;
   z-index: -1;
+}
+
+.icontainer {
+  width: 100%;
+
+  @media screen and (min-width: 1600px) {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
 
 .content {

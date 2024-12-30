@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
+import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/navbar.scss";
 import { Logo } from "../Image";
@@ -11,40 +11,39 @@ const NavigationBar = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="navbar-main" fixed="top">
-        <Container>
-          <Navbar.Brand>
-            <Link to="/">
-              <Logo />
-            </Link>
-          </Navbar.Brand>
-          <div className="d-flex align-items-center gap-3">
-            <Navbar.Toggle
-              aria-controls="offcanvasNavbar-expand-lg"
-              onClick={() => setShowOffcanvas((prev) => !prev)}
-            />
-          </div>
-          <Navbar.Offcanvas
-            show={showOffcanvas}
-            onHide={closeOffcanvas}
-            id="offcanvasNavbar-expand-lg"
-            aria-labelledby="offcanvasNavbarLabel-expand-lg"
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                <Link to="/">
-                  <Logo />
-                </Link>
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body className="justify-content-end">
-              <Nav className=" NavList">
-                <NavLinkComponent closeOffcanvas={closeOffcanvas} />
-              </Nav>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </Container>
+      {/* fixed="top" */}
+      <Navbar expand="lg" className="navbar-main">
+        <Navbar.Brand className="navbar-brand">
+          <Link to="/">
+            <Logo />
+          </Link>
+        </Navbar.Brand>
+        <div className="d-flex align-items-center gap-3">
+          <Navbar.Toggle
+            aria-controls="offcanvasNavbar-expand-lg"
+            onClick={() => setShowOffcanvas((prev) => !prev)}
+          />
+        </div>
+        <Navbar.Offcanvas
+          show={showOffcanvas}
+          onHide={closeOffcanvas}
+          id="offcanvasNavbar-expand-lg"
+          aria-labelledby="offcanvasNavbarLabel-expand-lg"
+          placement="end"
+        >
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
+              <Link to="/">
+                <Logo />
+              </Link>
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body className="justify-content-ed">
+            <Nav className=" NavList">
+              <NavLinkComponent closeOffcanvas={closeOffcanvas} />
+            </Nav>
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
       </Navbar>
     </>
   );
@@ -55,7 +54,7 @@ const NavLinkComponent = ({ closeOffcanvas }) => (
     <NavLink
       to="/about-innovat"
       onClick={closeOffcanvas}
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active about" : "about")}
     >
       About Innovat
     </NavLink>
@@ -63,35 +62,39 @@ const NavLinkComponent = ({ closeOffcanvas }) => (
     <NavLink
       to="/investments"
       onClick={closeOffcanvas}
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) =>
+        isActive ? "active investments" : "investments"
+      }
     >
       Investments
     </NavLink>
     <NavLink
       to="/funding"
       onClick={closeOffcanvas}
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active funding" : "funding")}
     >
       Funding
     </NavLink>
     <NavLink
       to="/education"
       onClick={closeOffcanvas}
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) =>
+        isActive ? "active education-link" : "education-link"
+      }
     >
       Education
     </NavLink>
     <NavLink
       to="/research"
       onClick={closeOffcanvas}
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active research" : "research")}
     >
       Research
     </NavLink>
     <NavLink
       to="/contact"
       onClick={closeOffcanvas}
-      className={({ isActive }) => (isActive ? "active" : "")}
+      className={({ isActive }) => (isActive ? "active contact" : "contact")}
     >
       Contact
     </NavLink>
