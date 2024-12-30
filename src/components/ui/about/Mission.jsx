@@ -1,10 +1,9 @@
-import { Container } from "react-bootstrap";
 import SectionTitle from "../SectionTitle";
 
 const Mission = () => {
   return (
     <section className="about_sections">
-      <Container>
+      <div className="icontainer">
         <SectionTitle title="Our Mission" />
 
         <div>
@@ -51,7 +50,7 @@ const Mission = () => {
             necessary to achieve their financial objectives.
           </p>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

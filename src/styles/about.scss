@@ -3,8 +3,8 @@
 .about_hero {
   background: url(../../public/assets/images/about-hero-bg.svg) no-repeat center
     center/cover;
-  padding: 100px 0;
-  height: 80vh;
+  padding: 71px 0;
+  height: 624px;
 
   .about_hero_text {
     background: linear-gradient(
@@ -14,7 +14,9 @@
     );
     opacity: 0.7;
     padding: 10px 12px 20px 10px;
-    width: 50%;
+    // width: 50%;
+    width: 656px;
+
     color: #ced7ff;
     font-size: 24px;
     font-style: normal;
@@ -30,8 +32,10 @@
 }
 
 .about_sections {
-  padding-top: 50px;
-  padding-bottom: 74px;
+  // padding-top: 76px;
+  // padding-bottom: 74px;
+  padding: 76px 62px 74px 62px;
+
   .section_title {
     font-size: 36px;
     font-weight: 700;
@@ -65,5 +69,26 @@
 
   p {
     font-size: 16px;
+  }
+
+  &.team {
+    margin: 50px 0;
+    padding: 0 62px 64px 62px;
+  }
+  &.investment-process {
+    margin: 50px 0;
+    padding: 0px 61px 38px 56px;
+  }
+  &.core-values {
+    margin: 50px 0 0 0;
+    padding: 0px 57px 194px 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 20px 40px 20px !important;
+
+    &.team {
+      margin: 20px 0;
+    }
   }
 }

@@ -1,10 +1,9 @@
-import { Container } from "react-bootstrap";
 import SectionTitle from "../SectionTitle";
 
 const InvestmentProcess = () => {
   return (
-    <section className="about_sections">
-      <Container>
+    <section className="about_sections investment-process">
+      <div className="icontainer">
         <SectionTitle title="Investment Process" />
         <div>
           <p>
@@ -66,7 +65,7 @@ const InvestmentProcess = () => {
             </p>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

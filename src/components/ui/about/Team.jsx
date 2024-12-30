@@ -1,10 +1,9 @@
-import { Container } from "react-bootstrap";
 import SectionTitle from "../SectionTitle";
 
 const Team = () => {
   return (
-    <section className="about_sections">
-      <Container>
+    <section className="about_sections team">
+      <div className="icontainer">
         <SectionTitle title="Our Team" />
         <div>
           <p>
@@ -55,7 +54,7 @@ const Team = () => {
             goals.
           </p>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };
