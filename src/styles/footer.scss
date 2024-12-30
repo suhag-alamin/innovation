@@ -3,7 +3,7 @@
 .footer {
   background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
   // padding-bottom: 70px;
-  padding: 26px 0 24px 0;
+  padding: 26px 45px 24px 18px;
   @media (max-width: 768px) {
     padding-bottom: 30px;
   }
@@ -107,11 +107,11 @@
 
       .footerLinks {
         display: flex;
-        gap: 77px;
+        gap: 150px;
         text-transform: uppercase;
-        .middleRow {
-          margin-left: 60px;
-        }
+        // .middleRow {
+        //   margin-left: 60px;
+        // }
       }
     }
   }

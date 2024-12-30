@@ -1,8 +1,6 @@
-import { Container } from "react-bootstrap";
-
 const Newsletter = () => {
   return (
-    <Container className=" home_newsletter">
+    <div className="icontainer home_newsletter">
       <h4>Stay up to Date </h4>
       <p>
         Subscribe to Innovat’s Monthly Research & Insights Newsletter Get
@@ -10,7 +8,7 @@ const Newsletter = () => {
         insights to keep you ahead in a fast-changing global economy.
       </p>
       <button>Subscribe</button>
-    </Container>
+    </div>
   );
 };
 

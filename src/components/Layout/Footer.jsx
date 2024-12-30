@@ -1,12 +1,11 @@
-import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { LinkedIn, Logo, Twitter, Youtube } from "../Image";
 import "../../styles/footer.scss";
+import { LinkedIn, Logo, Twitter, Youtube } from "../Image";
 
 const Footer = () => {
   return (
     <div className="footer d-grid gap-4">
-      <Container className=" px-0">
+      <div className="icontianer">
         <div className="footer-area">
           <div className="row">
             <div className="col-lg-3">
@@ -17,7 +16,7 @@ const Footer = () => {
               </div>
               <p className="copyright">© 2024 Innovat. All rights reserved.</p>
             </div>
-            <div className="col-lg-7">
+            <div className="col-lg-4">
               <div className="footer-weget">
                 <div className="footer-item d-none d-lg-block">
                   <div className="footerLinks">
@@ -58,7 +57,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-2">
+            <div className="col-lg-3">
               <div className="footer-item connect-icon">
                 <div className="fs-20 fw-700 text-center">Connect with us </div>
                 <ul>
@@ -120,7 +119,7 @@ const Footer = () => {
             538) allowing it to provide General Product Advice.
           </p>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

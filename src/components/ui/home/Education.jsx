@@ -1,9 +1,9 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { EducationGraphic } from "../../Image";
 
 const Education = () => {
   return (
-    <Container className="education">
+    <div className="education icontainer">
       <Row className="d-flex align-items-center rows">
         <Col lg={7}>
           <h3>Education</h3>
@@ -27,7 +27,7 @@ const Education = () => {
           <EducationGraphic />
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 

@@ -1,9 +1,9 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { InvestmentGraphic } from "../../Image";
 
 const InvestmentFunds = () => {
   return (
-    <Container className="investment-funds">
+    <div className="investment-funds icontainer">
       <Row className="d-flex align-items-center rows">
         <Col lg={6}>
           <InvestmentGraphic />
@@ -28,7 +28,7 @@ const InvestmentFunds = () => {
           <button className="outline-btn ">Read More</button>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 

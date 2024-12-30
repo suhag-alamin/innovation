@@ -1,9 +1,9 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { ApproachGraphic } from "../../Image";
 
 const OurApproach = () => {
   return (
-    <Container className="our-approach">
+    <div className="our-approach icontainer">
       <Row className="d-flex align-items-center rows">
         <Col lg={7}>
           <h3 className="">Our Approach</h3>
@@ -29,7 +29,7 @@ const OurApproach = () => {
           <ApproachGraphic />
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 
