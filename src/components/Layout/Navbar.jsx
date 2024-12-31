@@ -1,19 +1,25 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { Nav, Navbar, Offcanvas } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/navbar.scss";
 import { Logo } from "../Image";
 
 const NavigationBar = () => {
-  const [showOffcanvas, setShowOffcanvas] = useState(false);
-  const closeOffcanvas = () => setShowOffcanvas(false);
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => setExpanded(!expanded);
+  const handleClose = () => setExpanded(false);
 
   return (
     <>
-      {/* fixed="top" */}
-      <Navbar expand="lg" className="navbar-main">
-        <div className="icontainer d-flex align-items-center justify-content-between h-100 w-100">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        className="navbar-main icontainer"
+        expanded={expanded}
+      >
+        <>
           <Navbar.Brand className="navbar-brand">
             <Link to="/">
               <Logo />
@@ -22,83 +28,67 @@ const NavigationBar = () => {
           <div className="d-flex align-items-center gap-3">
             <Navbar.Toggle
               aria-controls="offcanvasNavbar-expand-lg"
-              onClick={() => setShowOffcanvas((prev) => !prev)}
+              onClick={handleToggle}
             />
           </div>
-          <Navbar.Offcanvas
-            show={showOffcanvas}
-            onHide={closeOffcanvas}
-            id="offcanvasNavbar-expand-lg"
-            aria-labelledby="offcanvasNavbarLabel-expand-lg"
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                <div className="navbar-brand">
-                  <Link to="/">
-                    <Logo />
-                  </Link>
-                </div>
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className=" NavList">
-                <NavLinkComponent closeOffcanvas={closeOffcanvas} />
-              </Nav>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </div>
+
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="NavList">
+              <NavLinkComponent handleClose={handleClose} />
+            </Nav>
+          </Navbar.Collapse>
+        </>
       </Navbar>
     </>
   );
 };
 
-const NavLinkComponent = ({ closeOffcanvas }) => (
+const NavLinkComponent = ({ handleClose }) => (
   <>
     <NavLink
       to="/about-innovat"
-      onClick={closeOffcanvas}
       className={({ isActive }) => (isActive ? "active about" : "about")}
+      onClick={handleClose}
     >
       About Innovat
     </NavLink>
 
     <NavLink
       to="/investments"
-      onClick={closeOffcanvas}
       className={({ isActive }) =>
         isActive ? "active investments" : "investments"
       }
+      onClick={handleClose}
     >
       Investments
     </NavLink>
     <NavLink
       to="/funding"
-      onClick={closeOffcanvas}
       className={({ isActive }) => (isActive ? "active funding" : "funding")}
+      onClick={handleClose}
     >
       Funding
     </NavLink>
     <NavLink
       to="/education"
-      onClick={closeOffcanvas}
       className={({ isActive }) =>
         isActive ? "active education-link" : "education-link"
       }
+      onClick={handleClose}
     >
       Education
     </NavLink>
     <NavLink
       to="/research"
-      onClick={closeOffcanvas}
       className={({ isActive }) => (isActive ? "active research" : "research")}
+      onClick={handleClose}
     >
       Research
     </NavLink>
     <NavLink
       to="/contact"
-      onClick={closeOffcanvas}
       className={({ isActive }) => (isActive ? "active contact" : "contact")}
+      onClick={handleClose}
     >
       Contact
     </NavLink>

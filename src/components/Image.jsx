@@ -40,7 +40,17 @@ export const Check = () => <img src={check} alt={check} />;
 
 // Images
 export const WmremoveTransformed = () => (
-  <img src={wmremoveTransformed} alt={wmremoveTransformed} />
+  <img
+    src={wmremoveTransformed}
+    alt={wmremoveTransformed}
+    width={1280}
+    height={493}
+    style={{
+      width: "1280px",
+      height: "493px",
+      // objectFit: "contain",
+    }}
+  />
 );
 
 export const ApproachGraphic = () => (
