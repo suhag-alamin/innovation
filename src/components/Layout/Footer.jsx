@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="">
         <div className="footer-area">
           <Row className="row">
-            <Col lg={3}>
+            <Col md={3} lg={3}>
               <div className="footer-item text-center text-md-start">
                 <Link to="/">
                   <Logo />
@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
               <p className="copyright">© 2024 Innovat. All rights reserved.</p>
             </Col>
-            <Col lg={6}>
+            <Col md={6} lg={5}>
               <div className="footer-weget">
                 <div className="footer-item d-none d-lg-block">
                   <div className="footerLinks">
@@ -58,9 +58,9 @@ const Footer = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3}>
+            <Col md={3} lg={3}>
               <div className="footer-item connect-icon">
-                <div className="fs-20 fw-700 text-center">Connect with us </div>
+                <h6>Connect with us </h6>
                 <ul>
                   <li>
                     <a
@@ -120,6 +120,9 @@ const Footer = () => {
             538) allowing it to provide General Product Advice.
           </p>
         </div>
+        <p className="bottom-copyright ">
+          © 2024 Innovat. All rights reserved.
+        </p>
       </div>
     </div>
   );
