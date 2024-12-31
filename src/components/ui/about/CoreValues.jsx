@@ -33,7 +33,7 @@ const CoreValues = () => {
           {values.map((value, index) => (
             <Col key={index} xs={12}>
               <div className="text-center">
-                <h3 className="fs-24">{value.title}</h3>
+                <h5>{value.title}</h5>
                 <p className="">{value.description}</p>
               </div>
             </Col>

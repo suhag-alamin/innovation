@@ -2,19 +2,26 @@
 
 .navbar-main {
   background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   // padding: 12px 0 !important;
   padding: 0 0 0 25px !important;
   overflow: hidden;
 
-  @media (max-width: 992px) {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
+  // .navbar-collapse.collapse.show {
+  //   background: linear-gradient(270deg, #25272b 0%, #373a41 100%);
+  // }
 
   @media screen and (max-width: 992px) {
-    padding-left: 25px !important;
-    padding-right: 20px !important;
+    background: linear-gradient(270deg, #25272b 0%, #373a41 100%);
+    padding: 0 !important;
+    .navbar-wrapper-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 25px;
+    }
   }
 
   // .container {

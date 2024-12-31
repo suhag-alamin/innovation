@@ -19,7 +19,7 @@ const NavigationBar = () => {
         className="navbar-main icontainer"
         expanded={expanded}
       >
-        <>
+        <div className="navbar-wrapper-container">
           <Navbar.Brand className="navbar-brand">
             <Link to="/">
               <Logo />
@@ -31,13 +31,13 @@ const NavigationBar = () => {
               onClick={handleToggle}
             />
           </div>
+        </div>
 
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="NavList">
-              <NavLinkComponent handleClose={handleClose} />
-            </Nav>
-          </Navbar.Collapse>
-        </>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="NavList">
+            <NavLinkComponent handleClose={handleClose} />
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </>
   );

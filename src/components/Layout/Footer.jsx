@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import "../../styles/footer.scss";
-import { LinkedIn, Logo, Twitter, Youtube } from "../Image";
+import { LinkedIn, Logo, Telegram, Twitter } from "../Image";
 
 const Footer = () => {
   return (
-    <div className="footer d-grid gap-4">
-      <div className="icontainer">
+    <div className="footer icontainer d-grid gap-4">
+      <div className="">
         <div className="footer-area">
           <div className="row">
             <div className="col-lg-3">
@@ -88,7 +88,7 @@ const Footer = () => {
                       href="/"
                       className="footerIcon"
                     >
-                      <Youtube />
+                      <Telegram />
                     </a>
                   </li>
                 </ul>

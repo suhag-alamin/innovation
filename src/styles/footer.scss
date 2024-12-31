@@ -4,14 +4,23 @@
   background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
   // padding-bottom: 70px;
   padding: 26px 45px 24px 18px;
+  .icontainer {
+    padding-left: 38px !important;
+    @media screen and (max-width: 992px) {
+      padding-left: 0 !important;
+    }
+  }
   @media (max-width: 768px) {
     padding-bottom: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
   .copyright {
     font-size: 12px;
     font-weight: 400;
     color: $color0;
     margin-top: 15px;
+    margin-bottom: 0;
     @media (max-width: 768px) {
       text-align: center;
     }
@@ -134,14 +143,14 @@
     padding-bottom: 60px;
     .disclaimer {
       color: $color0;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 700;
       line-height: 130%; /* 18.2px */
       margin-bottom: 10px;
     }
     p {
       color: $color0;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 400;
       line-height: 130%;
       margin: 0;
