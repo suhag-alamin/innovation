@@ -6,44 +6,44 @@ const ResearchSection = () => {
       {
         title: "Market Insights",
         description:
-          "Learn about the power of thematic investing, focusing on disruptive innovation and market trends. Our insights help you understand emerging technologies, discover strategies to align your portfolio with the future of investing.",
+          "Learn about the power of thematic investing, focusing on disruptive innovation and transformative trends like clean energy, AI, blockchain, and autonomous technologies. Discover strategies to align your portfolio with the future of innovation.",
       },
       {
         title: "Industry Reports",
         description:
-          "Access comprehensive and actionable quantitative and qualitative fund ratings. Our focus areas on long-term growth, develop investment strategies with industry-leading research and analysis. Our reports provide detailed insights into market trends, helping investors make informed decisions.",
+          "Plan for your future with innovative superannuation and retirement fund options. Our funds focus on long-term growth, blending traditional strategies with thematic investments in clean energy, technology, and other transformative sectors. Explore sustainable and tax-efficient solutions designed to align with your retirement goals while supporting industries driving global change.",
       },
       {
         title: "Portfolio Strategy & Risk Analysis",
         description:
-          "Enhance your investment strategy with expert analysis on portfolio diversification, risk management, and asset allocation. Our research helps you measure growth, profitability trends, and your financial goals.",
+          "Enhance your investment strategy with expert analysis on portfolio diversification, risk management, and asset allocation. Our research helps you balance growth and security in line with your financial goals.",
       },
       {
         title: "Company & Sector Analysis",
         description:
-          "Stay ahead with technical companies and detailed research, fundamental analysis, and market trends. Our expert analysis provides the critical information you need to assess investment opportunities.",
+          "Dive deep into individual companies and sectors with detailed research reports. From financial performance to growth potential, we provide the critical information you need to assess investment opportunities.",
       },
     ],
     rightColumn: [
       {
         title: "Thematic Investment Research",
         description:
-          "Plan for your future with innovative fundamental and valuation tools across multiple asset classes. Our research helps you identify long-term growth trends across sectors. Investments in clean energy, technology, and other transformative sectors. Access detailed reports and ratings to make informed investment decisions.",
+          "Plan for your future with innovative superannuation and retirement fund options. Our funds focus on long-term growth, blending traditional strategies with thematic investments in clean energy, technology, and other transformative sectors. Explore sustainable and tax-efficient solutions designed to align with your retirement goals while supporting industries driving global change.",
       },
       {
         title: "ESG & Impact Investing Research",
         description:
-          "Gain insights into the latest research on Environmental, Social, and Governance (ESG) investing. Our comprehensive analysis helps you understand the impact of investing in sustainable and responsible companies.",
+          "Gain insights into the latest research on Environmental, Social, and Governance (ESG) investing. Understand the financial and societal impacts of investing in sustainable and socially responsible companies.",
       },
       {
         title: "Investment Tools & Resources",
         description:
-          "Utilize a suite of research tools, calculators, and resources to support your investment decisions. Access historical data, performance metrics, and educational materials to enhance your investment strategy.",
+          "Utilize a suite of research tools, calculators, and resources to support your investment decisions. Access historical data, performance metrics, and industry benchmarks to guide your investment strategy.",
       },
       {
         title: "Research Blog & Articles",
         description:
-          "Stay informed with thought leadership and expert articles on the latest trends in markets, sector analysis, and investment strategies. Get blog posts and articles covering key market developments and industry insights.",
+          "Stay informed with thought leadership and expert articles on the latest trends in innovation, market analysis, and investment strategies. Our blog provides actionable insights and forward-thinking perspectives.",
       },
     ],
   };
@@ -56,8 +56,8 @@ const ResearchSection = () => {
         </div>
       </div>
       <div className="icontainer research-content">
-        <Row className="research-row">
-          <Col lg={5}>
+        <Row className="g-5">
+          <Col lg={6}>
             {researchContent.leftColumn.map((item, index) => (
               <div key={index} className="research-category">
                 <h3>{item.title}</h3>
@@ -65,7 +65,7 @@ const ResearchSection = () => {
               </div>
             ))}
           </Col>
-          <Col lg={5}>
+          <Col lg={6}>
             {researchContent.rightColumn.map((item, index) => (
               <div key={index} className="research-category">
                 <h3>{item.title}</h3>

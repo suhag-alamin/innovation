@@ -5,8 +5,8 @@ const FundingSection = () => {
     <div className="funding-section">
       <div className="icontainer">
         <h1 className="section-header">Funding</h1>
-        <Row className="funding-categories-row">
-          <Col lg={5}>
+        <Row className="g-5">
+          <Col lg={6}>
             <div className="funding-category">
               <h2>Venture Capital & Private Equity</h2>
 
@@ -20,11 +20,11 @@ const FundingSection = () => {
               </div>
 
               <div className="subcategory">
-                <h3>Venture Capital</h3>
+                <h3> Venture Capital (VC) </h3>
                 <p>
                   Equity investments in high-potential startups and early-stage
                   companies, providing funding to scale operations, expand
-                  markets, and accelerate growth.
+                  markets, and drive innovation.
                 </p>
               </div>
 
@@ -32,7 +32,7 @@ const FundingSection = () => {
                 <h3>Growth Equity</h3>
                 <p>
                   Capital for mature companies to accelerate growth, develop new
-                  products, or expand into new markets while maintaining full
+                  products, or expand into new markets without ceding full
                   ownership.
                 </p>
               </div>
@@ -46,15 +46,16 @@ const FundingSection = () => {
                 <p>
                   Focused investments aligned with innovation-driven themes such
                   as digital infrastructure, energy transition, artificial
-                  intelligence, or blockchain tech.
+                  intelligence, or blockchain tech, targeting companies leading
+                  transformative change.
                 </p>
               </div>
 
               <div className="subcategory">
                 <h3>Impact Investments</h3>
                 <p>
-                  Supporting innovative companies that deliver measurable social
-                  or environmental impact alongside financial returns,
+                  Capital directed toward companies that deliver measurable
+                  social or environmental impact alongside financial returns,
                   supporting ESG-aligned goals.
                 </p>
               </div>
@@ -70,16 +71,16 @@ const FundingSection = () => {
             </div>
           </Col>
 
-          <Col lg={5}>
+          <Col lg={6}>
             <div className="funding-category">
               <h2>Innovation and Development</h2>
 
               <div className="subcategory">
                 <h3>Research and Development (R&D) Funding</h3>
                 <p>
-                  Dedicated funding to support innovation, enabling companies to
-                  develop new technologies, products, or services that drive
-                  industry transformation.
+                  Dedicated funding to support cutting-edge innovation, enabling
+                  companies to develop new technologies, products, or services
+                  that drive industry transformation.
                 </p>
               </div>
             </div>
@@ -90,7 +91,7 @@ const FundingSection = () => {
               <div className="subcategory">
                 <h3>Mezzanine Financing</h3>
                 <p>
-                  A hybrid of debt and equity financing offering flexible
+                  A hybrid of debt and equity financing, offering flexible
                   funding for expansion or acquisitions with the potential for
                   higher returns than traditional debt.
                 </p>
@@ -100,8 +101,8 @@ const FundingSection = () => {
                 <h3>Bridge Financing</h3>
                 <p>
                   Short-term funding solutions to manage cash flow or support
-                  companies during transitions, such as funding gaps between
-                  financings.
+                  companies during transitions, such as funding rounds or
+                  acquisitions.
                 </p>
               </div>
 
@@ -120,7 +121,7 @@ const FundingSection = () => {
                 <h3>Buyout Funding</h3>
                 <p>
                   Capital to acquire controlling stakes or full ownership of
-                  companies, often used to accelerate operations or drive
+                  companies, often used to restructure operations or drive
                   strategic growth.
                 </p>
               </div>
@@ -128,7 +129,7 @@ const FundingSection = () => {
               <div className="subcategory">
                 <h3>Recapitalization</h3>
                 <p>
-                  Restructuring a company&apos;s capital to stabilize finances,
+                  Restructuring a company’s capital to stabilize finances,
                   support growth, or provide liquidity to existing shareholders.
                 </p>
               </div>
@@ -137,7 +138,7 @@ const FundingSection = () => {
                 <h3>Secondary Market Investments</h3>
                 <p>
                   Purchasing existing shares from current shareholders, offering
-                  liquidity while providing strategic access to established
+                  liquidity while enabling strategic investments in established
                   companies.
                 </p>
               </div>

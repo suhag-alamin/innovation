@@ -13,7 +13,7 @@ const InvestmentCarousel = () => {
 
   return (
     <>
-      <div className="investment-slider">
+      <div className="investment-slider icontainer">
         <Swiper
           modules={[Navigation]}
           grabCursor={false}
