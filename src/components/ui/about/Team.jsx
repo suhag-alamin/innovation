@@ -2,8 +2,8 @@ import SectionTitle from "../SectionTitle";
 
 const Team = () => {
   return (
-    <section className="about_sections team">
-      <div className="icontainer">
+    <div className="icontainer">
+      <section className="about_sections team">
         <SectionTitle title="Our Team" />
         <div>
           <p>
@@ -54,8 +54,8 @@ const Team = () => {
             goals.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

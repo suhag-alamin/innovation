@@ -2,8 +2,8 @@ import { Col, Row } from "react-bootstrap";
 
 const FundingSection = () => {
   return (
-    <div className="funding-section">
-      <div className="icontainer">
+    <div className="icontainer">
+      <div className="funding-section">
         <h1 className="section-header">Funding</h1>
         <Row className="g-5">
           <Col lg={6}>

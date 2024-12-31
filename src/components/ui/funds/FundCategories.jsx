@@ -8,8 +8,8 @@ const FundCategories = () => {
   console.log(half);
 
   return (
-    <div className="fund-categories">
-      <div className="icontainer">
+    <div className="icontainer">
+      <div className="fund-categories">
         <div className="view-all-funds">
           <p>View All Funds</p>
         </div>

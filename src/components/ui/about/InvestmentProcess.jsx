@@ -2,8 +2,8 @@ import SectionTitle from "../SectionTitle";
 
 const InvestmentProcess = () => {
   return (
-    <section className="about_sections investment-process">
-      <div className="icontainer">
+    <div className="icontainer">
+      <section className="about_sections investment-process">
         <SectionTitle title="Investment Process" />
         <div>
           <p>
@@ -65,8 +65,8 @@ const InvestmentProcess = () => {
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

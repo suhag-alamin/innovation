@@ -44,13 +44,13 @@ const SuperannuationSection = () => {
   };
 
   return (
-    <div className="superannuation-section">
+    <div className="superannuation-section icontainer">
       <div className="section-header">
-        <div className="icontainer">
+        <div className="">
           <h2>Superannuation / Retirement Funds</h2>
         </div>
       </div>
-      <div className="icontainer sub-section">
+      <div className=" sub-section">
         <Row className="g-5">
           <Col lg={6}>
             {superContent.leftColumn.map((item, index) => (

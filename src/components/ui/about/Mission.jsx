@@ -2,8 +2,8 @@ import SectionTitle from "../SectionTitle";
 
 const Mission = () => {
   return (
-    <section className="about_sections">
-      <div className="icontainer">
+    <div className="icontainer">
+      <section className="about_sections mission">
         <SectionTitle title="Our Mission" />
 
         <div>
@@ -50,8 +50,8 @@ const Mission = () => {
             necessary to achieve their financial objectives.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

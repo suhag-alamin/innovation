@@ -54,13 +54,13 @@ const EducationSection = () => {
   };
 
   return (
-    <div className="education-section">
-      <div className="section-header icontainer">
+    <div className="education-section icontainer">
+      <div className="section-header ">
         <div className="">
           <h2>Education</h2>
         </div>
       </div>
-      <div className="icontainer sub-section">
+      <div className=" sub-section">
         <h3 className="sub-section-header">Education</h3>
         <Row className="g-5">
           <Col lg={6}>

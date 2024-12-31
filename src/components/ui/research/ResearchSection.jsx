@@ -49,13 +49,13 @@ const ResearchSection = () => {
   };
 
   return (
-    <div className="research-section">
-      <div className="section-header icontainer">
+    <div className="research-section icontainer">
+      <div className="section-header ">
         <div className="">
           <h2>Research</h2>
         </div>
       </div>
-      <div className="icontainer research-content">
+      <div className=" research-content">
         <Row className="g-5">
           <Col lg={6}>
             {researchContent.leftColumn.map((item, index) => (

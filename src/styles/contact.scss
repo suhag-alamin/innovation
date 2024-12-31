@@ -123,22 +123,32 @@
     }
     .form-control {
       border-radius: 8px;
-      border: 1px solid #98a4d7;
-      opacity: 0.5;
+      border: 1px solid #98a4d7 !important;
+      // opacity: 0.5;
       background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
       padding: 16px 20px;
-      color: $color1;
+      color: $color0;
 
       &::placeholder {
         color: $color0;
         font-size: 15px;
         font-weight: 500;
       }
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color0 !important;
+        box-shadow: none !important;
+      }
+
+      &:active {
+        outline: none;
+      }
     }
     .form-select {
       border-radius: 8px;
-      border: 1px solid #98a4d7;
-      opacity: 0.5;
+      border: 1px solid #98a4d7 !important;
+      // opacity: 0.5;
       background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
       padding: 16px 20px;
       color: $color0;
@@ -154,6 +164,12 @@
         color: $color0;
         font-size: 15px;
         font-weight: 500;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color0 !important;
+        box-shadow: none !important;
       }
     }
 

@@ -34,37 +34,83 @@
 .about_sections {
   // padding-top: 76px;
   // padding-bottom: 74px;
-  padding: 76px 62px 74px 62px;
+  // padding: 76px 62px 74px 62px;
+  padding-top: 69px;
+  padding-left: 62px;
+  padding-right: 62px;
 
-  .section_title {
-    font-size: 36px;
-    font-weight: 700;
-    color: $color0;
+  &.mission {
+    padding-top: 0;
+    margin-top: 76px;
+  }
+
+  // .section-title {
+  //   font-size: 36px;
+  //   font-weight: 700;
+  //   color: $color0;
+  //   margin-bottom: 40px;
+  //   text-align: center;
+  //   position: relative;
+  //   z-index: 1;
+
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 40%;
+  //     height: 1px;
+  //     background-color: $color0;
+  //     left: 0;
+  //     top: 25px;
+  //     z-index: -1;
+  //   }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     width: 40%;
+  //     height: 1px;
+  //     background-color: $color0;
+  //     right: 0;
+  //     top: 25px;
+  //     z-index: -1;
+  //   }
+  // }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 40%;
+    h2 {
+      margin: 0 15px;
+      font-size: 36px;
+      font-weight: 700;
+      color: $color0;
+      text-align: center;
+    }
+
+    .line {
+      flex: 1;
       height: 1px;
       background-color: $color0;
-      left: 0;
-      top: 25px;
-      z-index: -1;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 40%;
-      height: 1px;
-      background-color: $color0;
-      right: 0;
-      top: 25px;
-      z-index: -1;
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 24px;
+      }
+
+      .line {
+        flex: 0.5;
+      }
     }
+  }
+
+  &.investment-process .section-title {
+    margin-bottom: 50px !important;
+  }
+  &.core-values .section-title {
+    margin-bottom: 33px;
   }
 
   p {

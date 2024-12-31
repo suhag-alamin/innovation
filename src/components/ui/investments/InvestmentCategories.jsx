@@ -2,8 +2,8 @@ import { Col, Row } from "react-bootstrap";
 
 const InvestmentCategories = () => {
   return (
-    <div className="investment-categories">
-      <div className="icontainer">
+    <div className="investment-categories icontainer">
+      <div className="">
         <p className="header-text">
           We invest in data centers and the energy systems that power them,
           delivering the essential infrastructure driving the AI and digital

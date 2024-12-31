@@ -24,16 +24,18 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div className="position-fixed bottom-0 end-0 p-3">
-      {showButton && (
-        <div
-          role="button"
-          className="shadow-none bg-transparent"
-          onClick={scrollToTop}
-        >
-          <ArrowCircle />
-        </div>
-      )}
+    <div className="scroll-to-top">
+      <div className="position-fixed bottom-0 end-0 p-3">
+        {showButton && (
+          <div
+            role="button"
+            className="shadow-none bg-transparent"
+            onClick={scrollToTop}
+          >
+            <ArrowCircle />
+          </div>
+        )}
+      </div>
     </div>
   );
 };

@@ -25,13 +25,13 @@ const InvestmentFundsSection = () => {
   ];
 
   return (
-    <div className="investment-funds-section">
+    <div className="investment-funds-section icontainer">
       <div className="section-header">
-        <div className="icontainer">
+        <div className="">
           <h2>Investment Funds</h2>
         </div>
       </div>
-      <div className="icontainer section-content">
+      <div className=" section-content">
         <h3 className="section-subheader">
           How to Invest in <span>Innovat™</span> ETFs
         </h3>

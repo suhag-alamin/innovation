@@ -26,8 +26,8 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="about_sections core-values">
-      <div className="icontainer">
+    <div className="icontainer">
+      <section className="about_sections core-values">
         <SectionTitle title="Our Core Values" />
         <Row className="g-4">
           {values.map((value, index) => (
@@ -39,8 +39,8 @@ const CoreValues = () => {
             </Col>
           ))}
         </Row>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
