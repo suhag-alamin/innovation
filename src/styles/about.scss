@@ -115,19 +115,21 @@
 
   p {
     font-size: 16px;
+    margin: 0;
   }
 
-  &.team {
-    margin: 50px 0;
-    padding: 0 62px 64px 62px;
-  }
-  &.investment-process {
-    margin: 50px 0;
-    padding: 0px 61px 38px 56px;
-  }
+  // &.team {
+  //   margin: 50px 0;
+  //   padding: 0 62px 64px 62px;
+  // }
+  // &.investment-process {
+  //   margin: 50px 0;
+  //   padding: 0px 61px 38px 56px;
+  // }
   &.core-values {
-    margin: 50px 0 0 0;
-    padding: 0px 57px 194px 60px;
+    // margin: 50px 0 0 0;
+    // padding: 0px 57px 194px 60px;
+    padding-bottom: 194px;
     h5 {
       font-size: 24px;
 

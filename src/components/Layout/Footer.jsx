@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
 import "../../styles/footer.scss";
 import { LinkedIn, Logo, Telegram, Twitter } from "../Image";
+import { Col, Row } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <div className="footer icontainer d-grid gap-4">
       <div className="">
         <div className="footer-area">
-          <div className="row">
-            <div className="col-lg-3">
+          <Row className="row">
+            <Col lg={3}>
               <div className="footer-item text-center text-md-start">
                 <Link to="/">
                   <Logo />
                 </Link>
               </div>
               <p className="copyright">© 2024 Innovat. All rights reserved.</p>
-            </div>
-            <div className="col-lg-4">
+            </Col>
+            <Col lg={6}>
               <div className="footer-weget">
                 <div className="footer-item d-none d-lg-block">
                   <div className="footerLinks">
@@ -56,8 +57,8 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-3">
+            </Col>
+            <Col lg={3}>
               <div className="footer-item connect-icon">
                 <div className="fs-20 fw-700 text-center">Connect with us </div>
                 <ul>
@@ -93,8 +94,8 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
 
         <div className="footer-bottom">

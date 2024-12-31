@@ -1,22 +1,28 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "../../styles/navbar.scss";
 import { Logo } from "../Image";
 
 const NavigationBar = () => {
   const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
 
   const handleToggle = () => setExpanded(!expanded);
   const handleClose = () => setExpanded(false);
+
+  const navbarClass =
+    location.pathname === "/about-innovat"
+      ? "navbar-main about-innovat"
+      : "navbar-main";
 
   return (
     <>
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="navbar-main icontainer"
+        className={`${navbarClass} icontainer`}
         expanded={expanded}
       >
         <div className="navbar-wrapper-container">
