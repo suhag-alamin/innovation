@@ -60,8 +60,8 @@ const ContactForm = () => {
     <div className="contact-section">
       <div className="icontainer">
         {!isSuccess && !isLoading ? (
-          <Row className="contact-form-section-row">
-            <Col lg={5}>
+          <Row className="g-5">
+            <Col lg={6}>
               <ContactDetails />
             </Col>
 
@@ -73,7 +73,7 @@ const ContactForm = () => {
                   onSubmit={handleSubmit}
                   className="contact-form"
                 >
-                  <Row>
+                  <Row className="gaps">
                     <Col md={6}>
                       <Form.Group>
                         <Form.Label className="label">First Name</Form.Label>
@@ -125,7 +125,7 @@ const ContactForm = () => {
                     />
                   </Form.Group>
 
-                  <Row>
+                  <Row className="gaps">
                     <Col md={4}>
                       <Form.Group>
                         <Form.Label className="label">Country Code</Form.Label>

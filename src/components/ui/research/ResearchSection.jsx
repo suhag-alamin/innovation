@@ -50,8 +50,8 @@ const ResearchSection = () => {
 
   return (
     <div className="research-section">
-      <div className="section-header">
-        <div className="icontainer">
+      <div className="section-header icontainer">
+        <div className="">
           <h2>Research</h2>
         </div>
       </div>

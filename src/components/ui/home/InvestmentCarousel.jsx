@@ -18,7 +18,7 @@ const InvestmentCarousel = () => {
           modules={[Navigation]}
           grabCursor={false}
           spaceBetween={17}
-          slidesPerView={1.2}
+          slidesPerView={1.1}
           navigation={{
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current,

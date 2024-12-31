@@ -55,8 +55,8 @@ const EducationSection = () => {
 
   return (
     <div className="education-section">
-      <div className="section-header">
-        <div className="icontainer">
+      <div className="section-header icontainer">
+        <div className="">
           <h2>Education</h2>
         </div>
       </div>

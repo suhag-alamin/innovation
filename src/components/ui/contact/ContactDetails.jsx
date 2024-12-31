@@ -32,7 +32,7 @@ const ContactDetails = () => {
           community, learn about our innovative projects, and get a closer look
           at the future of infrastructure and technology investments.
         </p>
-        <ul>
+        <ul className="social-list">
           <li>
             <span>LinkedIn:</span> Join our professional network for industry
             updates and thought leadership.

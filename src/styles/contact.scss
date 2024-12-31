@@ -25,6 +25,8 @@
 
       &.last {
         border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
       }
 
       h3 {
@@ -47,6 +49,9 @@
 
     .social-media {
       margin-top: 41px;
+      .social-list {
+        margin-top: 20px;
+      }
       h3 {
         color: $color0;
         font-size: 24px;
@@ -63,9 +68,11 @@
         font-size: 15px;
         font-weight: 400;
         line-height: 130%;
+        margin: 0;
       }
       ul {
         li {
+          margin-bottom: 20px;
           span {
             font-weight: 700;
           }
@@ -95,6 +102,7 @@
       flex-direction: column;
       gap: 20px;
     }
+
     h2 {
       color: $color0;
       font-size: 24px;
@@ -168,6 +176,12 @@
     }
   }
 
+  @media screen and (max-width: 992px) {
+    .gaps {
+      gap: 20px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     padding: 45px 20px 50px 20px;
     .contact-form-section-row {
@@ -178,6 +192,10 @@
       .info-group {
         padding-bottom: 6px;
         margin-bottom: 6px;
+      }
+      .info-group.last {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
       }
       .social-media {
         h3 {
