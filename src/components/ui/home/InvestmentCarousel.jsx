@@ -8,26 +8,18 @@ import fuel from "/assets/images/fuel_icon.svg";
 import memory from "/assets/images/memory_icon.svg";
 
 const InvestmentCarousel = () => {
-  const navigationPrevRef = useRef(null);
-  const navigationNextRef = useRef(null);
+  const swiperRef = useRef(null);
 
   return (
     <>
       <div className="investment-slider icontainer">
         <Swiper
+          ref={swiperRef}
           modules={[Navigation]}
           grabCursor={false}
           spaceBetween={17}
           slidesPerView={1.1}
           slidesPerGroup={3}
-          navigation={{
-            prevEl: navigationPrevRef.current,
-            nextEl: navigationNextRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            swiper.params.navigation.prevEl = navigationPrevRef.current;
-            swiper.params.navigation.nextEl = navigationNextRef.current;
-          }}
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -61,7 +53,8 @@ const InvestmentCarousel = () => {
         </Swiper>
 
         <button
-          ref={navigationNextRef}
+          // ref={navigationNextRef}
+          onClick={() => swiperRef.current.swiper.slideNext()}
           className="custom-nav-button"
           aria-label="Next slide"
         >
