@@ -31,18 +31,23 @@
     // width: 100%;
 
     max-width: 100%;
-    width: 1280px;
-    height: 493;
+    width: 100%;
+    // width: 1280px;
+    height: 493px;
     // height: auto;
-    // object-fit: cover;
+    object-fit: cover;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     padding: 20px 0;
     h1 {
       font-size: 20px;
       // width: 90%;
       margin-bottom: 20px;
+    }
+
+    img {
+      height: 150px;
     }
   }
 }

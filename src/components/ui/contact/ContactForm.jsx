@@ -135,9 +135,10 @@ const ContactForm = () => {
                           onChange={handleChange}
                           required
                         >
-                          <option value="">Country Code</option>
-                          <option value="+44">+44 (UK)</option>
-                          <option value="+1">+1 (US/CA)</option>
+                          {/* <option value="">Country Code</option> */}
+                          <option value="+61">AUS +61</option>
+                          <option value="+44">UK +44</option>
+                          <option value="+1">US +1</option>
                           {/* Add more country codes as needed */}
                         </Form.Select>
                       </Form.Group>
@@ -160,18 +161,14 @@ const ContactForm = () => {
                   </Row>
 
                   <Form.Group>
-                    <Form.Label className="label">
-                      Please select your enquiry Option{" "}
-                    </Form.Label>
+                    <Form.Label className="label">Investor Type</Form.Label>
                     <Form.Select
                       name="enquiryStatus"
                       value={formData.enquiryStatus}
                       onChange={handleChange}
                       required
                     >
-                      <option value="">
-                        Please Select Your Enquiry Status
-                      </option>
+                      <option value="">Investor Type</option>
                       <option value="investor">Individual Investor</option>
                       <option value="institutional">
                         Institutional Investor

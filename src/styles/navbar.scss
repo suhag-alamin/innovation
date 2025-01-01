@@ -2,16 +2,16 @@
 
 .navbar-main {
   // background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
-  background: linear-gradient(180deg, #000 0%, #404659 100%);
+  background: linear-gradient(270deg, #000 0%, #404659 100%);
 
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   // padding: 12px 0 !important;
   padding: 0 0 0 25px !important;
   overflow: hidden;
 
-  &.about-innovat {
-    background: linear-gradient(270deg, #000 0%, #3f4452 100%) !important;
-  }
+  // &.about-innovat {
+  //   background: linear-gradient(270deg, #000 0%, #3f4452 100%) !important;
+  // }
 
   // .navbar-collapse.collapse.show {
   //   background: linear-gradient(270deg, #25272b 0%, #373a41 100%);
