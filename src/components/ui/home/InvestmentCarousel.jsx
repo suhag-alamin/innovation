@@ -19,6 +19,7 @@ const InvestmentCarousel = () => {
           grabCursor={false}
           spaceBetween={17}
           slidesPerView={1.1}
+          slidesPerGroup={3}
           navigation={{
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current,
