@@ -1,7 +1,8 @@
 @import "./index.scss";
 
 .footer {
-  background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+  // background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+  background: linear-gradient(270deg, #000 0%, #404659 100%);
   // padding-bottom: 70px;
   padding: 26px 38px 0px 25px;
   .icontainer {
@@ -21,7 +22,7 @@
     color: $color0;
     margin-top: 15px;
     margin-bottom: 0;
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       text-align: center;
     }
   }
@@ -86,7 +87,7 @@
         margin-top: 14px;
         padding-left: 0;
 
-        @media (max-width: 767.98px) {
+        @media (max-width: 992px) {
           justify-content: center;
         }
 

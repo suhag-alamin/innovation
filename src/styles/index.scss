@@ -93,13 +93,16 @@ img {
 .icontainer {
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(270deg, #25272b 0%, #373a41 100%);
+  // background: linear-gradient(270deg, #25272b 0%, #373a41 100%);
+  background: linear-gradient(270deg, #111213 0%, #3b4256 100%);
 
   &.footer {
-    background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+    // background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+    background: linear-gradient(270deg, #000 0%, #404659 100%);
   }
   &.navbar-main {
-    background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+    // background: linear-gradient(0deg, #3c3f45 0%, #24252b 100%);
+    background: linear-gradient(180deg, #000 0%, #404659 100%);
   }
   &.about_hero {
     background: url(../../public/assets/images/about-hero-bg.svg) no-repeat

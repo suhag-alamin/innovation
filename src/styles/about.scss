@@ -24,7 +24,8 @@
     line-height: 130%; /* 31.2px */
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
+    height: 360px;
     .about_hero_text {
       width: 90%;
     }

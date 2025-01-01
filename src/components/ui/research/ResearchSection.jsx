@@ -56,7 +56,7 @@ const ResearchSection = () => {
         </div>
       </div>
       <div className=" research-content">
-        <Row className="g-5">
+        <Row className="g-lg-5">
           <Col lg={6}>
             {researchContent.leftColumn.map((item, index) => (
               <div key={index} className="research-category">

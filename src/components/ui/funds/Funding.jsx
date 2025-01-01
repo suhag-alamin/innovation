@@ -5,7 +5,7 @@ const FundingSection = () => {
     <div className="icontainer">
       <div className="funding-section">
         <h1 className="section-header">Funding</h1>
-        <Row className="g-5">
+        <Row className="g-lg-lg-5">
           <Col lg={6}>
             <div className="funding-category">
               <h2>Venture Capital & Private Equity</h2>

@@ -10,7 +10,7 @@ const InvestmentCategories = () => {
           revolution.
         </p>
 
-        <Row className="g-5">
+        <Row className="g-lg-5">
           <Col md={6}>
             {categories.topCategories
               .slice(0, Math.ceil(categories.topCategories.length / 2))
@@ -35,7 +35,7 @@ const InvestmentCategories = () => {
 
         <div className="transformation-header">TRANSFORMATION</div>
 
-        <Row className="g-5">
+        <Row className="g-lg-5">
           <Col md={6}>
             {categories.transformationCategories
               .slice(

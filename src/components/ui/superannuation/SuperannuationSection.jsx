@@ -51,7 +51,7 @@ const SuperannuationSection = () => {
         </div>
       </div>
       <div className=" sub-section">
-        <Row className="g-5">
+        <Row className="g-lg-5">
           <Col lg={6}>
             {superContent.leftColumn.map((item, index) => (
               <div key={index} className="super-category">

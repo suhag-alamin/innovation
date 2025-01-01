@@ -62,7 +62,7 @@ const EducationSection = () => {
       </div>
       <div className=" sub-section">
         <h3 className="sub-section-header">Education</h3>
-        <Row className="g-5">
+        <Row className="g-lg-5">
           <Col lg={6}>
             {educationContent.leftColumn.map((item, index) => (
               <div key={index} className="education-category">

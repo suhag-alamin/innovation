@@ -60,7 +60,7 @@ const ContactForm = () => {
     <div className="icontainer">
       <div className="contact-section">
         {!isSuccess && !isLoading ? (
-          <Row className="g-5">
+          <Row className="g-lg-5">
             <Col lg={6}>
               <ContactDetails />
             </Col>
