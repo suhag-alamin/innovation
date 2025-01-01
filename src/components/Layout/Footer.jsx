@@ -17,7 +17,81 @@ const Footer = () => {
               </div>
               <p className="copyright">© 2024 Innovat. All rights reserved.</p>
             </Col>
-            <Col lg={5}>
+            <Col lg={9} className="footer-weget">
+              <Row className="footerLinks">
+                <Col lg={4} className="d-none d-lg-block">
+                  <ul>
+                    <li>
+                      <Link to="/">About Innovat</Link>
+                    </li>
+                    <li>
+                      <Link to="/">Careers</Link>
+                    </li>
+                    <li>
+                      <Link to="/">privacy policy</Link>
+                    </li>
+                  </ul>
+                </Col>
+                <Col lg={4} className="d-none d-lg-block">
+                  <ul>
+                    <li>
+                      <Link to="/">Our Funds</Link>
+                    </li>
+                    <li>
+                      <Link to="/">education</Link>
+                    </li>
+                    <li>
+                      <Link to="/">Research center</Link>
+                    </li>
+                  </ul>
+                </Col>
+                <Col className="footer-list-phone-show d-lg-none">
+                  <div className="d-flex justify-content-center gap-3">
+                    <Link to="/terms">Terms of Use</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link to="/legal-disclaimer">Legal Disclaimer</Link>
+                  </div>
+                </Col>
+                <Col lg={4}>
+                  <div className="footer-item connect-icon">
+                    <h6>Connect with us </h6>
+                    <ul>
+                      <li>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href="/"
+                          className="footerIcon"
+                        >
+                          <LinkedIn />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href="/"
+                          className="footerIcon"
+                        >
+                          <Twitter />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href="/"
+                          className="footerIcon"
+                        >
+                          <Telegram />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+            {/* <Col lg={5}>
               <div className="footer-weget">
                 <div className="footer-item d-none d-lg-block">
                   <div className="footerLinks">
@@ -94,7 +168,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </div>
 

@@ -2,7 +2,10 @@
 
 .contact-section {
   padding: 45px 41px 50px 30px;
+  background: url(../../public/assets/images/contact-bg.png) no-repeat top
+    center/contain;
   color: $color0;
+  height: 100vh;
   .contact-form-section-row {
     gap: 70px;
   }
@@ -132,7 +135,7 @@
 
       &::placeholder {
         color: $color0;
-        opacity: 0.5;
+        // opacity: 0.5;
         font-size: 15px;
         font-weight: 500;
       }
@@ -178,7 +181,7 @@
     .btn-submit {
       border-radius: 8px;
       border: 1px solid rgba(152, 164, 215, 0.5);
-      background: linear-gradient(180deg, #24252b 0%, #373a40 100%);
+      background: linear-gradient(270deg, #111213 0%, #3b4256 100%);
       color: $color0;
       padding: 16px 50px;
       font-size: 15px;
@@ -195,13 +198,13 @@
   }
 
   @media screen and (max-width: 992px) {
+    padding: 25px 20px 50px 20px;
     .gaps {
       gap: 20px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    padding: 45px 20px 50px 20px;
     .contact-form-section-row {
       flex-direction: column;
       gap: 20px;
