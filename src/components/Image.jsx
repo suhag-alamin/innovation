@@ -1,6 +1,7 @@
 import approachGraphic from "/assets/images/approach-graphic.svg";
 import arrowCircle from "/assets/images/arrow_circle_icon.svg";
 import arrowCircleRight from "/assets/images/arrow_circle_right_icon.svg";
+import arrowRight from "/assets/images/arrow_right_icon.svg";
 import linkedin from "/assets/images/linkedin_icon.svg";
 import linkedin2 from "/assets/images/linkedin_icon2.svg";
 import logo from "/assets/images/logo.svg";
@@ -34,6 +35,7 @@ export const ArrowCircle = () => <img src={arrowCircle} alt={arrowCircle} />;
 export const ArrowCircleRight = () => (
   <img src={arrowCircleRight} alt={arrowCircleRight} />
 );
+export const ArrowRight = () => <img src={arrowRight} alt={arrowRight} />;
 export const Memory = () => <img src={memory} alt={memory} />;
 export const Fuel = () => <img src={fuel} alt={fuel} />;
 export const ElectricCar = () => <img src={electricCar} alt={electricCar} />;

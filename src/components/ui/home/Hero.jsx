@@ -1,4 +1,4 @@
-import { WmremoveTransformed } from "../../Image";
+// import { WmremoveTransformed } from "../../Image";
 
 const Hero = () => {
   return (
@@ -8,7 +8,15 @@ const Hero = () => {
         new technologies, creating new markets, and driving change across
         industries.
       </h1>
-      <WmremoveTransformed />
+      {/* <WmremoveTransformed /> */}
+      <video
+        src="/assets/videos/hero-video.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload
+      ></video>
     </div>
   );
 };

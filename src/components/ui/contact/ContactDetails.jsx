@@ -6,23 +6,33 @@ const ContactDetails = () => {
       <h2>Innovat (UK) Limited</h2>
 
       <div className="info-group">
-        <h3>Address</h3>
-        <p>123 Innovation Street</p>
-        <p>Tech City, London EC1V 9NR</p>
-        <p>United Kingdom</p>
+        <h3>Address:</h3>
+        <p>63-66 Hatton Garden</p>
+        <p>Fifth Floor, Suite 23</p>
+        <p>London, United Kingdom EC1N 8LE</p>
       </div>
 
       <div className="info-group">
-        <h3>Contact</h3>
-        <p>Phone: +44 20 1234 5678</p>
-        <p>Email: info@innovat-global.co.uk</p>
+        <h3>Contact:</h3>
+        <p>Mobile: +61 424 996 833</p>
+        <p>Direct: +61 2 8258 8181</p>
+      </div>
+      <div className="info-group">
+        <h3>Email:</h3>
+        <p>General: enquiries@innovat.global</p>
+        <p>Investors: investors@innovat.global</p>
+        <p>Media: press@innovat.global</p>
       </div>
 
       <div className="info-group last">
-        <h3>Office Hours</h3>
-        <p>Monday to Friday: 9:00 AM - 5:30 PM GMT</p>
+        <h3>Business Hours:</h3>
+        <p>Monday - Friday: 9:00 AM - 5:30 PM GMT</p>
         <p>Saturday & Sunday: Closed</p>
       </div>
+      <p className="mt-2">
+        We look forward to connecting with you and exploring how we can work
+        together to shape the future of infrastructure and innovation.
+      </p>
 
       <div className="social-media">
         <h3>Connect with Us on Social Media</h3>
