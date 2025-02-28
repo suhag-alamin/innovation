@@ -1,7 +1,7 @@
+import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../styles/footer.scss";
 import { LinkedIn, Logo, Telegram, Twitter } from "../Image";
-import { Col, Row } from "react-bootstrap";
 
 const Footer = () => {
   return (
@@ -20,41 +20,56 @@ const Footer = () => {
               </p>
             </Col>
             <Col lg={9} className="footer-weget">
-              <Row className="footerLinks">
-                <Col lg={4} className="d-none d-lg-block">
+              <Row className="footerLinks text-center text-lg-start gap-2 gap-lg-0">
+                <Col lg={3}>
                   <ul>
                     <li>
-                      <Link to="/">About Innovation</Link>
+                      <Link to="/about-innovation">About Innovation</Link>
                     </li>
                     <li>
-                      <Link to="/">Careers</Link>
+                      <Link to="/investment-funds">Investment Funds</Link>
                     </li>
                     <li>
-                      <Link to="/">privacy policy</Link>
+                      <Link to="/funds">Our Funds</Link>
+                    </li>
+                    <li>
+                      <Link to="/education">education</Link>
                     </li>
                   </ul>
                 </Col>
-                <Col lg={4} className="d-none d-lg-block">
+                <Col lg={3}>
                   <ul>
                     <li>
-                      <Link to="/">Our Funds</Link>
+                      <Link to="/exchange-traded">Exchange Traded Funds</Link>
                     </li>
                     <li>
-                      <Link to="/">education</Link>
+                      <Link to="/research">Research center</Link>
                     </li>
                     <li>
-                      <Link to="/">Research center</Link>
+                      <Link to="/superannuation">
+                        Superannuation and Retirement
+                      </Link>
                     </li>
                   </ul>
                 </Col>
-                <Col className="footer-list-phone-show d-lg-none">
-                  <div className="d-flex justify-content-center gap-3">
-                    <Link to="/terms">Terms of Use</Link>
-                    <Link to="/privacy-policy">Privacy Policy</Link>
-                    <Link to="/legal-disclaimer">Legal Disclaimer</Link>
-                  </div>
+                <Col lg={3}>
+                  <ul>
+                    <li>
+                      <Link to="/terms">Terms</Link>
+                    </li>
+                    <li>
+                      <Link to="/privacy-policy">privacy policy</Link>
+                    </li>
+                    <li>
+                      <Link to="/terms-conditions">Terms and Conditions</Link>
+                    </li>
+                    <li>
+                      <Link to="/legal-disclaimer">Legal Disclaimer</Link>
+                    </li>
+                  </ul>
                 </Col>
-                <Col lg={4}>
+
+                <Col lg={3}>
                   <div className="footer-item connect-icon">
                     <h6>Connect with us </h6>
                     <ul>

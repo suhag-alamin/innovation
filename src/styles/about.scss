@@ -14,14 +14,13 @@
     );
     opacity: 0.7;
     padding: 10px 12px 20px 10px;
-    // width: 50%;
     width: 656px;
 
     color: #ced7ff;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 130%; /* 31.2px */
+    line-height: 130%;
   }
 
   @media screen and (max-width: 992px) {
@@ -33,9 +32,6 @@
 }
 
 .about_sections {
-  // padding-top: 76px;
-  // padding-bottom: 74px;
-  // padding: 76px 62px 74px 62px;
   padding-top: 69px;
   padding-left: 62px;
   padding-right: 62px;
@@ -44,37 +40,6 @@
     padding-top: 0;
     margin-top: 76px;
   }
-
-  // .section-title {
-  //   font-size: 36px;
-  //   font-weight: 700;
-  //   color: $color0;
-  //   margin-bottom: 40px;
-  //   text-align: center;
-  //   position: relative;
-  //   z-index: 1;
-
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     width: 40%;
-  //     height: 1px;
-  //     background-color: $color0;
-  //     left: 0;
-  //     top: 25px;
-  //     z-index: -1;
-  //   }
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 40%;
-  //     height: 1px;
-  //     background-color: $color0;
-  //     right: 0;
-  //     top: 25px;
-  //     z-index: -1;
-  //   }
-  // }
 
   .section-title {
     display: flex;
@@ -108,30 +73,13 @@
     }
   }
 
-  // &.investment-process .section-title {
-  //   margin-bottom: 50px !important;
-  // }
-  // &.core-values .section-title {
-  //   margin-bottom: 33px;
-  // }
-
   p {
     font-size: 16px;
     margin: 0;
     margin-bottom: 10px;
   }
 
-  // &.team {
-  //   margin: 50px 0;
-  //   padding: 0 62px 64px 62px;
-  // }
-  // &.investment-process {
-  //   margin: 50px 0;
-  //   padding: 0px 61px 38px 56px;
-  // }
   &.core-values {
-    // margin: 50px 0 0 0;
-    // padding: 0px 57px 194px 60px;
     padding-bottom: 194px;
     h5 {
       font-size: 24px;
