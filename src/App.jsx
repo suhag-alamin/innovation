@@ -7,7 +7,6 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import TermsConditions from "./pages/TermsConditions";
-import AboutInnovat from "./pages/AboutInnovat";
 import Funds from "./pages/Funds";
 import ExchangeTraded from "./pages/ExchangeTraded";
 import Investments from "./pages/Investments";
@@ -17,6 +16,7 @@ import Research from "./pages/Research";
 import Superannuation from "./pages/Superannuation";
 import InvestmentFunds from "./pages/InvestmentFunds";
 import Contact from "./pages/Contact";
+import AboutInnovation from "./pages/AboutInnovation";
 
 const App = () => {
   return (
@@ -36,10 +36,10 @@ const App = () => {
               />
 
               <Route
-                path="/about-innovat"
+                path="/about-innovation"
                 element={
                   <Layout>
-                    <AboutInnovat />
+                    <AboutInnovation />
                   </Layout>
                 }
               />

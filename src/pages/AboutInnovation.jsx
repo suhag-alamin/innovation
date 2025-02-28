@@ -5,7 +5,7 @@ import Mission from "../components/ui/about/Mission";
 import Team from "../components/ui/about/Team";
 import "../styles/about.scss";
 
-const AboutInnovat = () => {
+const AboutInnovation = () => {
   return (
     <div>
       <Hero />
@@ -17,4 +17,4 @@ const AboutInnovat = () => {
   );
 };
 
-export default AboutInnovat;
+export default AboutInnovation;

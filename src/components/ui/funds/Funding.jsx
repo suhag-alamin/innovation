@@ -73,7 +73,7 @@ const FundingSection = () => {
 
           <Col lg={6}>
             <div className="funding-category">
-              <h2>Innovation and Development</h2>
+              <h2>innovation and Development</h2>
 
               <div className="subcategory">
                 <h3>Research and Development (R&D) Funding</h3>

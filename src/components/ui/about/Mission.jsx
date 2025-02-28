@@ -8,7 +8,7 @@ const Mission = () => {
 
         <div>
           <p>
-            At Innovat, we are committed to helping our clients achieve their
+            At Innovation, we are committed to helping our clients achieve their
             financial goals through investments in disruptive innovations and
             thematic investing. We strive to leverage our clients with access to
             the most promising and profitable investments, and our team is
@@ -17,7 +17,7 @@ const Mission = () => {
           </p>
           <p>
             Our focus is on identifying companies that are at the forefront of
-            innovation and have the potential for long-term growth. We
+            Innovation and have the potential for long-term growth. We
             specialize in companies that are leading the way in the development
             of new technologies, from clean energy technology and autonomous
             vehicles, to fintech solutions, digital infrastructure projects, and
@@ -34,7 +34,7 @@ const Mission = () => {
             and more.
           </p>
           <p>
-            At Innovat, we strive to provide our clients with the most
+            At Innovation, we strive to provide our clients with the most
             up-to-date information on emerging trends in disruptive innovation
             and insights into specific sectors so that they can make informed
             decisions about their investments. Our team is committed to helping

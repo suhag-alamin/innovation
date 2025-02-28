@@ -3,7 +3,7 @@ import { LinkedIn2, Twitter2, Youtube2 } from "../../Image";
 const ContactDetails = () => {
   return (
     <div className="company-info">
-      <h2>Innovat (UK) Limited</h2>
+      <h2>Innovation Limited</h2>
 
       <div className="info-group">
         <h3>Address:</h3>
@@ -19,9 +19,9 @@ const ContactDetails = () => {
       </div>
       <div className="info-group">
         <h3>Email:</h3>
-        <p>General: enquiries@innovat.global</p>
-        <p>Investors: investors@innovat.global</p>
-        <p>Media: press@innovat.global</p>
+        <p>General: general@innovation.com</p>
+        <p>Investors: investors@innovation.com</p>
+        <p>Media: media@innovation.com</p>
       </div>
 
       <div className="info-group last">
@@ -38,7 +38,7 @@ const ContactDetails = () => {
         <h3>Connect with Us on Social Media</h3>
         <p>
           Stay up-to-date with the latest news, insights, and developments from
-          Innovat. Follow us on our social media channels to engage with our
+          innovation. Follow us on our social media channels to engage with our
           community, learn about our innovative projects, and get a closer look
           at the future of infrastructure and technology investments.
         </p>

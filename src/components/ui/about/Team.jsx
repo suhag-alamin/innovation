@@ -7,9 +7,9 @@ const Team = () => {
         <SectionTitle title="Our Team" />
         <div>
           <p>
-            At Innovat, we have a team of highly experienced and knowledgeable
-            professionals dedicated to helping our clients achieve their
-            financial goals through innovative strategies and cutting-edge
+            At Innovation, we have a team of highly experienced and
+            knowledgeable professionals dedicated to helping our clients achieve
+            their financial goals through innovative strategies and cutting-edge
             research. Our team is composed of experts from a variety of
             backgrounds, including finance, technology, economics, law,
             engineering, and more, all of whom are committed to providing our
@@ -49,9 +49,9 @@ const Team = () => {
             opportunities.
           </p>
           <p>
-            At Innovat, we understand that our clients success is our success,
-            and we are committed to helping our clients achieve their financial
-            goals.
+            At innovation, we understand that our clients success is our
+            success, and we are committed to helping our clients achieve their
+            financial goals.
           </p>
         </div>
       </section>

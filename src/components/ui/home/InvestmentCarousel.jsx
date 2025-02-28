@@ -70,14 +70,14 @@ export default InvestmentCarousel;
 const investmentCategories = [
   {
     id: 2,
-    title: "Innovat™ Digital Infrastructure",
+    title: "Innovation Digital Infrastructure",
     icon: fuel,
     description:
       "Invests in companies that are developing digital infrastructure solutions such as cloud computing platforms, data storage systems, network security solutions etc.",
   },
   {
     id: 1,
-    title: "Innovat™ Clean Energy",
+    title: "Innovation Clean Energy",
     icon: memory,
     description:
       "Invest in companies that are leading the way in the development of clean energy technologies, such as solar, nuclear, wind, and geothermal",
@@ -85,126 +85,126 @@ const investmentCategories = [
 
   {
     id: 3,
-    title: "Innovat™ Autonomous Tech",
+    title: "Innovation Autonomous Tech",
     icon: electricCar,
     description:
       "Invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 4,
-    title: "Innovat™ Fintech",
+    title: "Innovation Fintech",
     icon: fuel,
     description:
       "Invest in companies that are leading the way in the development of clean energy technologies, such as solar, wind, and geothermal.",
   },
   {
     id: 5,
-    title: "Innovat™ Blockchain Technology",
+    title: "Innovation Blockchain Technology",
     icon: memory,
     description:
       "This fund invests in companies that are developing digital infrastructure solutions such as cloud computing platforms, data storage systems, network security solutions etc.",
   },
   {
     id: 6,
-    title: "Innovat™ Space Tech & Exploration",
+    title: "Innovation Space Tech & Exploration",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 7,
-    title: "Innovat™ China Innovation",
+    title: "Innovation China innovationion",
     icon: fuel,
     description:
       "Invest in companies that are leading the way in the development of clean energy technologies, such as solar, wind, and geothermal.",
   },
   {
     id: 8,
-    title: "Innovat™ US Innovation",
+    title: "Innovation US innovationion",
     icon: memory,
     description:
       "This fund invests in companies that are developing digital infrastructure solutions such as cloud computing platforms, data storage systems, network security solutions etc.",
   },
   {
     id: 9,
-    title: "Innovat™ Diversified Technology",
+    title: "Innovation Diversified Technology",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 10,
-    title: "Innovat™ Cybersecurity",
+    title: "Innovation Cybersecurity",
     icon: fuel,
     description:
       "Invest in companies that are leading the way in the development of clean energy technologies, such as solar, wind, and geothermal.",
   },
   {
     id: 11,
-    title: "Innovat™ Internet of Things",
+    title: "Innovation Internet of Things",
     icon: memory,
     description:
       "This fund invests in companies that are developing digital infrastructure solutions such as cloud computing platforms, data storage systems, network security solutions etc.",
   },
   {
     id: 12,
-    title: "Innovat™ Mobility & Transportation",
+    title: "Innovation Mobility & Transportation",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 13,
-    title: "Innovat™ Bitcoin Mining",
+    title: "Innovation Bitcoin Mining",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 14,
-    title: "Innovat™ Digital Health",
+    title: "Innovation Digital Health",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 15,
-    title: "Innovat™ Media & Entertainment",
+    title: "Innovation Media & Entertainment",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 16,
-    title: "Innovat™ Sustainable Agriculture",
+    title: "Innovation Sustainable Agriculture",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 17,
-    title: "Innovat™ Digital Assets",
+    title: "Innovation Digital Assets",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 18,
-    title: "Innovat™ Artificial Intelligence",
+    title: "Innovation Artificial Intelligence",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 19,
-    title: "Innovat™ Robotics & Automation",
+    title: "Innovation Robotics & Automation",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",
   },
   {
     id: 20,
-    title: "Innovat™ Digital Assets",
+    title: "Innovation Digital Assets",
     icon: electricCar,
     description:
       "This fund invests in companies that are developing autonomous technologies such as self-driving cars, drones, robots, and artificial intelligence (AI).",

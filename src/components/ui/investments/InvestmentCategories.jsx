@@ -115,7 +115,7 @@ const categories = {
   ],
   transformationCategories: [
     {
-      title: "Technology & Innovation Strategy",
+      title: "Technology & innovation Strategy",
       description:
         "Leveraging emerging technologies to create competitive advantages, we work with portfolio companies to develop and execute innovation strategies that drive growth and market leadership.",
     },

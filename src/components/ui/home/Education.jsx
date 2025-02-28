@@ -8,7 +8,7 @@ const Education = () => {
         <Col lg={7}>
           <h3>Education</h3>
           <p>
-            At Innovat, we believe that knowledge is power. That’s why we
+            At Innovation, we believe that knowledge is power. That’s why we
             provide you with access to comprehensive educational resources. Our
             materials include insights on exchange-traded funds (ETFs),
             strategies for maximizing ETF investing, and the benefits of

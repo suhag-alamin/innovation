@@ -15,14 +15,16 @@ const Footer = () => {
                   <Logo />
                 </Link>
               </div>
-              <p className="copyright">© 2024 Innovat. All rights reserved.</p>
+              <p className="copyright">
+                © {new Date().getFullYear()} Innovation. All rights reserved.
+              </p>
             </Col>
             <Col lg={9} className="footer-weget">
               <Row className="footerLinks">
                 <Col lg={4} className="d-none d-lg-block">
                   <ul>
                     <li>
-                      <Link to="/">About Innovat</Link>
+                      <Link to="/">About Innovation</Link>
                     </li>
                     <li>
                       <Link to="/">Careers</Link>
@@ -98,7 +100,7 @@ const Footer = () => {
                     <div>
                       <ul>
                         <li>
-                          <Link to="/">About Innovat</Link>
+                          <Link to="/">About innovation</Link>
                         </li>
                         <li>
                           <Link to="/">Careers</Link>

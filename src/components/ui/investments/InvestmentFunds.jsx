@@ -5,22 +5,22 @@ const InvestmentFundsSection = () => {
     {
       title: "Direct Purchase",
       description:
-        "Investors can purchase shares of Innovat mutual funds directly through the Innovat website.",
+        "Investors can purchase shares of Innovation mutual funds directly through the Innovation website.",
     },
     {
       title: "Brokerage Account",
       description:
-        "Investors can purchase Innovat ETFs through an online broker. This allows investors to purchase ETF shares quickly and easily with minimal fees.",
+        "Investors can purchase Innovation ETFs through an online broker. This allows investors to purchase ETF shares quickly and easily with minimal fees.",
     },
     {
       title: "Financial Advisor",
       description:
-        "Discuss your portfolio and investment goals with an experienced financial advisor who can assist you with the purchase of Innovat ETFs.",
+        "Discuss your portfolio and investment goals with an experienced financial advisor who can assist you with the purchase of Innovation ETFs.",
     },
     {
       title: "Self-Managed Super Fund",
       description:
-        "Investors can access Innovat ETFs through a Self Managed Super Fund (SMSF). This allows investors to diversify their investments across a variety of ETFs, managed by themselves.",
+        "Investors can access Innovation ETFs through a Self Managed Super Fund (SMSF). This allows investors to diversify their investments across a variety of ETFs, managed by themselves.",
     },
   ];
 
@@ -33,11 +33,11 @@ const InvestmentFundsSection = () => {
       </div>
       <div className=" section-content">
         <h3 className="section-subheader">
-          How to Invest in <span>Innovat™</span> ETFs
+          How to Invest in <span>Innovation </span> ETFs
         </h3>
         <p className="section-description">
-          Innovat ETFs trade on the largest exchanges around the world and can
-          be purchased and sold through online broker/dealers, financial
+          Innovation ETFs trade on the largest exchanges around the world and
+          can be purchased and sold through online broker/dealers, financial
           advisers, and other financial intermediaries.
         </p>
 

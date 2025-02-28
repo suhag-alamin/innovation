@@ -81,7 +81,7 @@ export const fundsData = [
   {
     id: 7,
     category: "Active Funds",
-    name: "China Innovation",
+    name: "China innovation",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -94,7 +94,7 @@ export const fundsData = [
   {
     id: 8,
     category: "Active Funds",
-    name: "US Innovation",
+    name: "US innovation",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -355,7 +355,7 @@ export const fundsData = [
   {
     id: 28,
     category: "Index Funds",
-    name: "ESG Innovation Asia Pacific",
+    name: "ESG innovation Asia Pacific",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -368,7 +368,7 @@ export const fundsData = [
   {
     id: 29,
     category: "Index Funds",
-    name: "ESG Innovation Europe",
+    name: "ESG innovation Europe",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",
@@ -381,7 +381,7 @@ export const fundsData = [
   {
     id: 30,
     category: "Index Funds",
-    name: "ESG Innovation US",
+    name: "ESG innovation US",
     inspectionDate: "1/1/2023",
     nav: "$25.62",
     netAssets: "$808.24M",

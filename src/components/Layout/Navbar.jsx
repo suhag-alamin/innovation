@@ -13,8 +13,8 @@ const NavigationBar = () => {
   const handleClose = () => setExpanded(false);
 
   const navbarClass =
-    location.pathname === "/about-innovat"
-      ? "navbar-main about-innovat"
+    location.pathname === "/about-innovation"
+      ? "navbar-main about-innovation"
       : "navbar-main";
 
   return (
@@ -52,7 +52,7 @@ const NavigationBar = () => {
 const NavLinkComponent = ({ handleClose }) => (
   <>
     <NavLink
-      to="/about-innovat"
+      to="/about-innovation"
       className={({ isActive }) =>
         isActive
           ? "active about d-flex justify-content-between align-items-center"
@@ -60,7 +60,7 @@ const NavLinkComponent = ({ handleClose }) => (
       }
       onClick={handleClose}
     >
-      About Innovat
+      About Innovation
       <div className="d-lg-none">
         <ArrowRight />
       </div>

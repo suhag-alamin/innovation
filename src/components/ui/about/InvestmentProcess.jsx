@@ -7,12 +7,12 @@ const InvestmentProcess = () => {
         <SectionTitle title="Investment Process" />
         <div>
           <p>
-            Innovat is a leading global fund manager with a singular investment
-            process designed to identify and invest in disruptive innovation
-            that has the potential to create long-term value for our clients.
-            Our process focuses on researching, analyzing, and assessing
-            companies that are developing new technologies, products, or
-            services that have the potential to disrupt existing markets or
+            Innovation is a leading global fund manager with a singular
+            investment process designed to identify and invest in disruptive
+            innovation that has the potential to create long-term value for our
+            clients. Our process focuses on researching, analyzing, and
+            assessing companies that are developing new technologies, products,
+            or services that have the potential to disrupt existing markets or
             create entirely new ones.
           </p>
 

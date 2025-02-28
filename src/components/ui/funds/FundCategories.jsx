@@ -22,7 +22,7 @@ const FundCategories = () => {
                   {firstHalf.map((fund) => (
                     <li key={fund.id}>
                       <h5>
-                        <span>Innovat™</span> {fund.name}
+                        <span>Innovation</span> {fund.name}
                       </h5>
                       <p>{fund.description}</p>
                     </li>
@@ -34,7 +34,7 @@ const FundCategories = () => {
                   {secondHalf.map((fund) => (
                     <li key={fund.id}>
                       <h5>
-                        <span>Innovat™</span> {fund.name}
+                        <span>Innovation</span> {fund.name}
                       </h5>
                       <p>{fund.description}</p>
                     </li>
@@ -50,7 +50,7 @@ const FundCategories = () => {
               {categories.indexFunds.map((fund) => (
                 <li key={fund.id}>
                   <h5>
-                    <span>Innovat™</span> {fund.name}
+                    <span>Innovation</span> {fund.name}
                   </h5>
                   <p>{fund.description}</p>
                 </li>
@@ -64,7 +64,7 @@ const FundCategories = () => {
             <ul>
               <li>
                 <h5>
-                  <span>Innovat™</span> Innovat™ Global Innovation
+                  <span>Innovation</span>
                 </h5>
                 <p>
                   Digital infrastructure, energy transition, artificial
@@ -167,13 +167,13 @@ const categories = {
     },
     {
       id: 16,
-      name: "China Innovation",
+      name: "China innovation",
       description:
         "Chinese biotechnology, robotics, advanced manufacturing technologies.",
     },
     {
       id: 17,
-      name: "US Innovation",
+      name: "US innovation",
       description:
         "US medical devices and diagnostics, advanced materials and nanotechnology.",
     },

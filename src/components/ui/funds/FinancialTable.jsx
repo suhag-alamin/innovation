@@ -59,7 +59,7 @@ export default function FinancialTable() {
             {activeFunds.map((fund) => (
               <tr key={fund.id}>
                 <td className="fund-name">
-                  <span>Innovat™ </span>
+                  <span>Innovation </span>
                   {fund.name}
                 </td>
                 <td>{fund.inspectionDate}</td>
@@ -86,7 +86,7 @@ export default function FinancialTable() {
             {indexFunds.map((fund) => (
               <tr key={fund.id}>
                 <td className="fund-name">
-                  <span>Innovat™ </span>
+                  <span>Innovation </span>
                   {fund.name}
                 </td>
                 <td>{fund.inspectionDate}</td>

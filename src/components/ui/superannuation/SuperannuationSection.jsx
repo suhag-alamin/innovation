@@ -6,7 +6,7 @@ const SuperannuationSection = () => {
       {
         title: "Overview of Superannuation Solutions",
         description:
-          "At Innovat, we redefine retirement planning with a focus on innovation-driven growth. Our superannuation solutions are designed to enhance your portfolio by investing in transformative sectors such as digital infrastructure, renewable energy, artificial intelligence, and blockchain technologies. With a commitment to long-term value creation, we ensure your retirement savings are aligned with the future of global industries.",
+          "At Innovation, we redefine retirement planning with a focus on innovation-driven growth. Our superannuation solutions are designed to enhance your portfolio by investing in transformative sectors such as digital infrastructure, renewable energy, artificial intelligence, and blockchain technologies. With a commitment to long-term value creation, we ensure your retirement savings are aligned with the future of global industries.",
       },
       {
         title: "Managed Superannuation Funds",
@@ -16,29 +16,29 @@ const SuperannuationSection = () => {
       {
         title: "Self-Managed Super Funds (SMSFs)",
         description:
-          "Take control of your retirement planning with Innovat’s support for SMSFs. We provide tailored insights and access to high-potential investments in cutting-edge industries, empowering trustees to maximize returns while maintaining independence and flexibility in their financial strategies.",
+          "Take control of your retirement planning with innovation’s support for SMSFs. We provide tailored insights and access to high-potential investments in cutting-edge industries, empowering trustees to maximize returns while maintaining independence and flexibility in their financial strategies.",
       },
     ],
     rightColumn: [
       {
         title: "Thematic Retirement Investment Strategies",
         description:
-          "Align your retirement savings with future-focused investment themes. Innovat specializes in thematic strategies that target sectors driving global transformation, ensuring your portfolio benefits from innovation while supporting your long-term financial security.",
+          "Align your retirement savings with future-focused investment themes. innovation specializes in thematic strategies that target sectors driving global transformation, ensuring your portfolio benefits from innovation while supporting your long-term financial security.",
       },
       {
         title: "Sustainability in Retirement Planning",
         description:
-          "Innovat integrates sustainability into retirement investment strategies by focusing on renewable energy, energy transition, and environmentally responsible technologies. Our approach ensures your retirement savings contribute to a sustainable future while delivering strong financial outcomes.",
+          "innovation integrates sustainability into retirement investment strategies by focusing on renewable energy, energy transition, and environmentally responsible technologies. Our approach ensures your retirement savings contribute to a sustainable future while delivering strong financial outcomes.",
       },
       {
         title: "Retirement Insights & Resources",
         description:
-          "Stay informed with Innovat’s comprehensive resources and insights for superannuation investors. From emerging market trends to regulatory updates, we provide the knowledge and tools you need to make confident, future-oriented decisions.",
+          "Stay informed with innovation’s comprehensive resources and insights for superannuation investors. From emerging market trends to regulatory updates, we provide the knowledge and tools you need to make confident, future-oriented decisions.",
       },
       {
-        title: "Get Started with Innovat Superannuation",
+        title: "Get Started with innovation Superannuation",
         description:
-          "Secure your financial future with Innovat’s innovation-focused superannuation solutions. Contact our team to explore tailored investment options that align with your retirement aspirations and values.",
+          "Secure your financial future with innovation’s innovationion-focused superannuation solutions. Contact our team to explore tailored investment options that align with your retirement aspirations and values.",
       },
     ],
   };
